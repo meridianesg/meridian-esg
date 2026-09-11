@@ -6,110 +6,276 @@
 
     <title>Meridian ESG | Sustainability Intelligence for Southeast Asia</title>
 
-    <meta name="description" content="Meridian ESG provides sustainability intelligence, ESG insights and practical knowledge for businesses and stakeholders in Southeast Asia.">
+    <meta name="description" content="Meridian ESG is a sustainability intelligence and knowledge platform helping businesses, investors and stakeholders navigate ESG and sustainability in Southeast Asia, particularly Indonesia.">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            color: #1f2933;
+            color: #18212b;
             background: #ffffff;
             line-height: 1.6;
         }
 
         header {
-            padding: 24px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.97);
             border-bottom: 1px solid #e5e7eb;
+            padding: 20px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 1px;
+            font-size: 23px;
+            font-weight: 700;
+            letter-spacing: 2px;
         }
 
         nav a {
-            margin-left: 25px;
+            margin-left: 28px;
             text-decoration: none;
-            color: #374151;
+            color: #34404c;
             font-size: 15px;
         }
 
+        nav a:hover {
+            color: #111827;
+        }
+
         .hero {
-            padding: 110px 8%;
-            max-width: 900px;
+            padding: 120px 7% 110px;
+            max-width: 1100px;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #65717d;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 52px;
-            line-height: 1.1;
-            margin-bottom: 25px;
+            font-size: clamp(44px, 6vw, 72px);
+            line-height: 1.05;
+            max-width: 900px;
+            margin: 0 0 30px;
+            letter-spacing: -2px;
         }
 
         .hero p {
             font-size: 21px;
-            max-width: 700px;
-            color: #4b5563;
+            max-width: 760px;
+            color: #53606d;
+            margin-bottom: 35px;
         }
 
         .button {
             display: inline-block;
-            margin-top: 25px;
-            padding: 14px 25px;
-            text-decoration: none;
-            background: #1f2933;
+            padding: 14px 24px;
+            background: #18212b;
             color: white;
-            border-radius: 5px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .button:hover {
+            background: #303b47;
         }
 
         .section {
-            padding: 70px 8%;
-            background: #f7f8f6;
+            padding: 90px 7%;
+        }
+
+        .section-light {
+            background: #f5f6f4;
+        }
+
+        .section-dark {
+            background: #18212b;
+            color: white;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin-bottom: 50px;
         }
 
         .section h2 {
-            font-size: 32px;
+            font-size: 42px;
+            line-height: 1.15;
+            margin: 0 0 20px;
+            letter-spacing: -1px;
+        }
+
+        .section-intro {
+            font-size: 19px;
+            color: #596572;
+        }
+
+        .section-dark .section-intro {
+            color: #d4d9de;
+        }
+
+        .five-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1px;
+            background: #d9dde0;
+            border: 1px solid #d9dde0;
+        }
+
+        .five-item {
+            background: white;
+            padding: 30px 24px;
+            min-height: 190px;
+        }
+
+        .number {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #7a858f;
+            margin-bottom: 25px;
+        }
+
+        .five-item h3 {
+            font-size: 21px;
+            margin: 0 0 12px;
+        }
+
+        .five-item p {
+            color: #65717d;
+            font-size: 15px;
+            margin: 0;
         }
 
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
-            margin-top: 35px;
         }
 
         .card {
             background: white;
-            padding: 30px;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
+            border: 1px solid #e1e5e8;
+            padding: 35px;
+            min-height: 250px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
         }
 
         .card h3 {
-            margin-top: 0;
+            font-size: 26px;
+            margin: 0 0 15px;
+        }
+
+        .card p {
+            color: #5e6974;
+            margin-bottom: 25px;
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: #18212b;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .large-statement {
+            font-size: 34px;
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        .experience {
+            border-left: 3px solid #18212b;
+            padding-left: 30px;
+        }
+
+        .experience p {
+            font-size: 19px;
+            color: #53606d;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .audience {
+            padding: 22px;
+            border: 1px solid #dce1e4;
+            background: white;
+        }
+
+        .audience strong {
+            display: block;
+            margin-bottom: 5px;
         }
 
         footer {
-            padding: 35px 8%;
+            padding: 35px 7%;
             border-top: 1px solid #e5e7eb;
             font-size: 14px;
-            color: #6b7280;
+            color: #68737e;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
         }
 
-        @media (max-width: 800px) {
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
+        @media (max-width: 900px) {
 
             nav {
                 display: none;
+            }
+
+            .five-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards,
+            .audience-grid,
+            .split {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+
+            .section h2 {
+                font-size: 34px;
+            }
+
+            footer {
+                display: block;
             }
         }
     </style>
@@ -118,62 +284,109 @@
 <body>
 
 <header>
-    <div class="logo">MERIDIAN ESG</div>
+
+    <div class="logo">
+        MERIDIAN ESG
+    </div>
 
     <nav>
-        <a href="#">Intelligence</a>
-        <a href="#">Knowledge</a>
-        <a href="#">Insights</a>
-        <a href="#">Navigator</a>
-        <a href="#">About</a>
+        <a href="#intelligence">Intelligence</a>
+        <a href="#knowledge">Knowledge</a>
+        <a href="#insights">Insights</a>
+        <a href="#navigator">Navigator</a>
+        <a href="#about">About</a>
     </nav>
+
 </header>
 
+
+<!-- HERO -->
+
 <section class="hero">
+
+    <div class="eyebrow">
+        Sustainability Intelligence for Southeast Asia
+    </div>
 
     <h1>
         Where Sustainability Knowledge Meets Business Reality.
     </h1>
 
     <p>
-        Meridian ESG is a sustainability intelligence platform helping
-        businesses, investors and stakeholders understand what matters,
-        why it matters, what is changing — and what to do next.
+        Meridian ESG helps businesses, investors and stakeholders
+        understand what matters, why it matters, what is changing —
+        and what to do next.
     </p>
 
-    <a href="#" class="button">
+    <a href="#explore" class="button">
         Explore Meridian ESG
     </a>
 
 </section>
 
-<section class="section">
 
-    <h2>Beyond Information. Interpretation Matters.</h2>
+<!-- THE MERIDIAN FIVE -->
 
-    <div class="cards">
+<section class="section section-light" id="explore">
 
-        <div class="card">
-            <h3>Intelligence</h3>
+    <div class="section-header">
+
+        <div class="eyebrow">
+            The Meridian Perspective
+        </div>
+
+        <h2>
+            Beyond Information.<br>
+            Interpretation Matters.
+        </h2>
+
+        <p class="section-intro">
+            Information is everywhere. The challenge is understanding
+            what it means — and what to do with it.
+        </p>
+
+    </div>
+
+
+    <div class="five-grid">
+
+        <div class="five-item">
+            <div class="number">01</div>
+            <h3>What matters?</h3>
             <p>
-                Understand the developments, regulations and trends
-                shaping sustainability and ESG in Southeast Asia.
+                Identify the issues that deserve attention.
             </p>
         </div>
 
-        <div class="card">
-            <h3>Knowledge</h3>
+        <div class="five-item">
+            <div class="number">02</div>
+            <h3>Why does it matter?</h3>
             <p>
-                Build practical understanding of sustainability,
-                ESG, reporting, governance and stakeholder engagement.
+                Understand the implications for business and stakeholders.
             </p>
         </div>
 
-        <div class="card">
-            <h3>Insights</h3>
+        <div class="five-item">
+            <div class="number">03</div>
+            <h3>What is changing?</h3>
             <p>
-                Go beyond information. Understand what developments
-                actually mean for organizations and decision-makers.
+                Track regulations, markets, expectations and emerging risks.
+            </p>
+        </div>
+
+        <div class="five-item">
+            <div class="number">04</div>
+            <h3>What should you do?</h3>
+            <p>
+                Translate knowledge into practical decisions and action.
+            </p>
+        </div>
+
+        <div class="five-item">
+            <div class="number">05</div>
+            <h3>What are others getting wrong?</h3>
+            <p>
+                Recognize blind spots before they become business problems.
             </p>
         </div>
 
@@ -181,25 +394,282 @@
 
 </section>
 
-<section class="hero">
 
-    <h2>The Meridian Perspective</h2>
+<!-- EXPLORE -->
 
-    <p>
-        Information is everywhere. Interpretation is not.
-    </p>
+<section class="section" id="intelligence">
 
-    <p>
-        Drawing on more than 25 years of experience across business,
-        sustainability, ESG, development and stakeholder engagement,
-        Meridian ESG connects global developments with the realities
-        of doing business in Southeast Asia, particularly Indonesia.
-    </p>
+    <div class="section-header">
+
+        <div class="eyebrow">
+            Explore Meridian
+        </div>
+
+        <h2>
+            Intelligence. Knowledge. Insight.
+        </h2>
+
+        <p class="section-intro">
+            Three ways to navigate the rapidly changing world of
+            sustainability and ESG.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Intelligence</h3>
+
+            <p>
+                What's changing in ESG, sustainability, regulation,
+                markets and stakeholder expectations?
+            </p>
+
+            <a href="#intelligence" class="card-link">
+                WHAT'S CHANGING →
+            </a>
+
+        </div>
+
+
+        <div class="card" id="knowledge">
+
+            <h3>Knowledge</h3>
+
+            <p>
+                Build practical understanding of sustainability,
+                ESG, reporting, governance and stakeholder engagement.
+            </p>
+
+            <a href="#knowledge" class="card-link">
+                EXPLORE KNOWLEDGE →
+            </a>
+
+        </div>
+
+
+        <div class="card" id="insights">
+
+            <h3>Insights</h3>
+
+            <p>
+                Go beyond information. Explore interpretations,
+                perspectives and lessons from business reality.
+            </p>
+
+            <a href="#insights" class="card-link">
+                READ INSIGHTS →
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- SOUTHEAST ASIA -->
+
+<section class="section section-dark">
+
+    <div class="split">
+
+        <div>
+
+            <div class="eyebrow">
+                The Meridian Lens
+            </div>
+
+            <h2>
+                Global developments.<br>
+                Southeast Asian reality.
+            </h2>
+
+        </div>
+
+
+        <div>
+
+            <p class="large-statement">
+                Global sustainability standards increasingly shape
+                local business decisions.
+            </p>
+
+            <p class="section-intro">
+                Meridian ESG connects global developments with the
+                realities of doing business in Southeast Asia,
+                particularly Indonesia.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NAVIGATOR -->
+
+<section class="section" id="navigator">
+
+    <div class="split">
+
+        <div>
+
+            <div class="eyebrow">
+                Navigator
+            </div>
+
+            <h2>
+                Knowledge should lead somewhere.
+            </h2>
+
+            <p class="section-intro">
+                Meridian ESG will turn knowledge into practical
+                frameworks, checklists, guides and decision tools.
+            </p>
+
+        </div>
+
+
+        <div class="experience">
+
+            <p>
+                ESG Readiness
+            </p>
+
+            <p>
+                Sustainability Reporting
+            </p>
+
+            <p>
+                Board ESG Questions
+            </p>
+
+            <p>
+                Stakeholder Mapping
+            </p>
+
+            <p>
+                Materiality &amp; Strategy
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section section-light" id="about">
+
+    <div class="split">
+
+        <div>
+
+            <div class="eyebrow">
+                The Experience Behind Meridian
+            </div>
+
+            <h2>
+                More than 25 years of experience.
+            </h2>
+
+        </div>
+
+
+        <div>
+
+            <p class="large-statement">
+                The value isn't simply knowing what the frameworks say.
+            </p>
+
+            <p class="section-intro">
+                It is understanding what they mean in practice.
+            </p>
+
+            <p>
+                Meridian ESG draws on more than 25 years of experience
+                across business, sustainability, ESG, development,
+                stakeholder engagement and governance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHO IT SERVES -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="eyebrow">
+            Who Meridian Is For
+        </div>
+
+        <h2>
+            Connecting the sustainability ecosystem.
+        </h2>
+
+    </div>
+
+
+    <div class="audience-grid">
+
+        <div class="audience">
+            <strong>Businesses</strong>
+            Executives, sustainability, strategy, risk and corporate affairs.
+        </div>
+
+        <div class="audience">
+            <strong>Investors</strong>
+            Investors, analysts, banks and financial institutions.
+        </div>
+
+        <div class="audience">
+            <strong>NGOs &amp; Foundations</strong>
+            Development organizations and civil society.
+        </div>
+
+        <div class="audience">
+            <strong>Standards &amp; Policy</strong>
+            Standards bodies, regulators and industry organizations.
+        </div>
+
+        <div class="audience">
+            <strong>Professionals</strong>
+            Sustainability, ESG and corporate professionals.
+        </div>
+
+        <div class="audience">
+            <strong>Students &amp; Researchers</strong>
+            People building knowledge for the next generation.
+        </div>
+
+    </div>
+
+</section>
+
+
 <footer>
-    © 2026 Meridian ESG. Sustainability Intelligence for Southeast Asia.
+
+    <div>
+        © 2026 Meridian ESG
+    </div>
+
+    <div>
+        Sustainability Intelligence for Southeast Asia
+    </div>
+
 </footer>
 
 </body>
