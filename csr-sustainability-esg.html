@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSR, Sustainability & ESG: What's the Difference? | Meridian ESG</title>
+
+<meta name="description"
+content="A Meridian ESG foundation guide explaining the evolution from CSR to sustainability to ESG, and why the distinction matters for business.">
+
+<style>
+
+:root {
+    --navy: #0b1724;
+    --navy-2: #102333;
+    --teal: #42b8aa;
+    --teal-dark: #218e84;
+    --teal-light: #8ed9d0;
+    --ivory: #f6f5f0;
+    --paper: #fbfaf7;
+    --white: #ffffff;
+    --ink: #18232c;
+    --muted: #64717a;
+    --line: #dce2e2;
+    --max: 1080px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(var(--max), calc(100% - 48px));
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(11,23,36,.97);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.logo-mark {
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--teal);
+    border-radius: 50%;
+    position: relative;
+}
+
+.logo-mark:before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background: var(--teal);
+    top: 14px;
+    left: 7px;
+    transform: rotate(-45deg);
+}
+
+.logo-mark:after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: var(--teal);
+    border-radius: 50%;
+    top: 5px;
+    right: 3px;
+}
+
+.logo-text {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    font-size: 8px;
+    letter-spacing: 1.4px;
+    color: #91a4ad;
+    margin-top: -3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #c7d0d5;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--teal-light);
+}
+
+
+/* =========================
+   ARTICLE HERO
+   ========================= */
+
+.article-hero {
+    background:
+        radial-gradient(circle at 80% 25%, rgba(66,184,170,.15), transparent 30%),
+        linear-gradient(135deg, var(--navy), #102b3b);
+    color: white;
+    padding: 105px 0 100px;
+}
+
+.article-hero-inner {
+    max-width: 900px;
+}
+
+.eyebrow {
+    color: var(--teal);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.article-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(46px, 6vw, 70px);
+    line-height: 1.05;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+}
+
+.article-hero h1 span {
+    color: var(--teal-light);
+}
+
+.subtitle {
+    color: #c4d0d5;
+    font-size: 19px;
+    max-width: 760px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ARTICLE LAYOUT
+   ========================= */
+
+.article-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 75px;
+    padding: 80px 0 110px;
+}
+
+
+/* SIDE NAV */
+
+.article-nav {
+    position: sticky;
+    top: 105px;
+    align-self: start;
+}
+
+.article-nav-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--teal-dark);
+    margin-bottom: 15px;
+}
+
+.article-nav a {
+    display: block;
+    padding: 8px 0;
+    color: #718089;
+    font-size: 12px;
+    line-height: 1.4;
+    border-bottom: 1px solid transparent;
+}
+
+.article-nav a:hover {
+    color: var(--teal-dark);
+}
+
+
+/* ARTICLE */
+
+.article {
+    max-width: 730px;
+}
+
+.article-intro {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.55;
+    color: var(--navy);
+    margin-bottom: 55px;
+}
+
+.article h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--navy);
+    margin: 70px 0 20px;
+}
+
+.article h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin: 30px 0 8px;
+}
+
+.article p {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.article ul {
+    margin: 20px 0 25px 22px;
+    color: var(--muted);
+}
+
+.article li {
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   CONCEPT CARDS
+   ========================= */
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 35px 0 25px;
+}
+
+.concept {
+    padding: 28px 24px;
+    border: 1px solid var(--line);
+    background: white;
+    min-height: 250px;
+}
+
+.concept:nth-child(2) {
+    background: var(--ivory);
+}
+
+.concept-number {
+    font-family: Georgia, serif;
+    color: var(--teal-dark);
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.concept h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.concept p {
+    font-size: 13px;
+}
+
+
+/* =========================
+   TIMELINE
+   ========================= */
+
+.timeline {
+    border-left: 2px solid var(--line);
+    margin: 35px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 35px 35px;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: var(--teal);
+    border-radius: 50%;
+    left: -5px;
+    top: 8px;
+}
+
+.timeline-item strong {
+    display: block;
+    color: var(--teal-dark);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+
+/* =========================
+   CALLOUT
+   ========================= */
+
+.callout {
+    margin: 45px 0;
+    padding: 35px;
+    border-left: 4px solid var(--teal);
+    background: var(--ivory);
+}
+
+.callout p {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    line-height: 1.5;
+    color: var(--navy);
+    margin: 0;
+}
+
+
+/* =========================
+   MERIDIAN PERSPECTIVE
+   ========================= */
+
+.meridian-perspective {
+    background: var(--navy);
+    color: white;
+    margin: 70px 0 0;
+    padding: 45px;
+}
+
+.meridian-perspective .eyebrow {
+    color: var(--teal-light);
+}
+
+.meridian-perspective h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.meridian-perspective p {
+    color: #aebdc4;
+}
+
+.perspective-question {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    color: white !important;
+    font-family: Georgia, serif;
+    font-size: 22px !important;
+}
+
+
+/* =========================
+   FIVE QUESTIONS
+   ========================= */
+
+.questions {
+    margin-top: 55px;
+}
+
+.question {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 18px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+}
+
+.question-number {
+    font-family: Georgia, serif;
+    color: var(--teal-dark);
+    font-size: 22px;
+}
+
+.question h3 {
+    margin: 0 0 4px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.question p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RELATED
+   ========================= */
+
+.related {
+    background: var(--ivory);
+    padding: 80px 0;
+}
+
+.related h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 30px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.related-card {
+    background: white;
+    border: 1px solid var(--line);
+    padding: 25px;
+}
+
+.related-card strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.related-card span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: var(--navy);
+    color: #81939c;
+    padding: 45px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+.footer-brand {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.footer-copy {
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: var(--teal-light);
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .article-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .article-nav {
+        position: static;
+        display: none;
+    }
+
+    .concept-grid,
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 32px, var(--max));
+    }
+
+    .nav {
+        height: 68px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .article-hero {
+        padding: 75px 0 80px;
+    }
+
+    .article-hero h1 {
+        font-size: 45px;
+    }
+
+    .article-layout {
+        padding: 60px 0 80px;
+    }
+
+    .article-intro {
+        font-size: 21px;
+    }
+
+    .article h2 {
+        font-size: 30px;
+        margin-top: 55px;
+    }
+
+    .meridian-perspective {
+        padding: 30px 24px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html" class="logo">
+
+<div class="logo-mark"></div>
+
+<div>
+<div class="logo-text">MERIDIAN ESG</div>
+<div class="logo-sub">SUSTAINABILITY INTELLIGENCE</div>
+</div>
+
+</a>
+
+<nav class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="knowledge.html">Knowledge</a>
+<a href="knowledge.html#guides">Guides</a>
+<a href="index.html#insights">Insights</a>
+<a href="index.html#about">About</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="article-hero">
+
+<div class="container article-hero-inner">
+
+<div class="eyebrow">
+Meridian Knowledge Guide 01 · Foundation
+</div>
+
+<h1>
+CSR, Sustainability & ESG:
+<span>What's the Difference?</span>
+</h1>
+
+<p class="subtitle">
+Three terms. Three different histories. One increasingly connected business agenda.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ARTICLE -->
+
+<div class="container article-layout">
+
+
+<!-- SIDE NAV -->
+
+<aside class="article-nav">
+
+<div class="article-nav-title">
+In this guide
+</div>
+
+<a href="#short-answer">The short answer</a>
+<a href="#csr">Where CSR came from</a>
+<a href="#sustainability">Sustainability enters business</a>
+<a href="#esg">The rise of ESG</a>
+<a href="#changed">What actually changed?</a>
+<a href="#confusion">Why companies get confused</a>
+<a href="#strategy">From reporting to strategy</a>
+<a href="#perspective">Meridian Perspective</a>
+<a href="#questions">Five questions</a>
+
+</aside>
+
+
+
+<!-- MAIN ARTICLE -->
+
+<article class="article">
+
+
+<p class="article-intro" id="short-answer">
+
+If you have ever wondered whether CSR, sustainability and ESG are simply different names for the same thing, you are not alone.
+
+They overlap. But they are not identical.
+
+Understanding the difference helps explain how corporate responsibility evolved — and why today's sustainability agenda is increasingly connected to strategy, risk, governance and value creation.
+
+</p>
+
+
+
+<h2 id="csr">
+01 — Where CSR came from
+</h2>
+
+<p>
+Corporate Social Responsibility, or CSR, emerged from the idea that businesses have responsibilities beyond generating profit.
+</p>
+
+<p>
+CSR traditionally focused on how a company behaves toward society — including employees, communities, philanthropy, ethical conduct and social impacts.
+</p>
+
+<p>
+For many organisations, CSR became associated with community programmes, charitable contributions, employee volunteering and social investment.
+</p>
+
+<div class="callout">
+
+<p>
+CSR often asked: <strong>“What responsibility does business have toward society?”</strong>
+</p>
+
+</div>
+
+
+
+<h2 id="sustainability">
+02 — Sustainability enters business
+</h2>
+
+<p>
+Sustainability introduced a broader question.
+</p>
+
+<p>
+Instead of looking only at social responsibility, organisations increasingly had to consider how economic, environmental and social factors affected their ability to operate and create value over the long term.
+</p>
+
+<p>
+This brought issues such as climate change, natural resources, pollution, labour conditions, human rights and community impacts into a wider business conversation.
+</p>
+
+<p>
+The emphasis began moving from individual CSR programmes toward the sustainability of the organisation itself and the systems in which it operates.
+</p>
+
+
+
+<div class="concept-grid">
+
+<div class="concept">
+
+<div class="concept-number">01</div>
+
+<h3>CSR</h3>
+
+<p>
+Responsibility toward society and stakeholders, often expressed through programmes, policies and social initiatives.
+</p>
+
+</div>
+
+
+<div class="concept">
+
+<div class="concept-number">02</div>
+
+<h3>Sustainability</h3>
+
+<p>
+The ability to create long-term value while considering economic, environmental and social impacts.
+</p>
+
+</div>
+
+
+<div class="concept">
+
+<div class="concept-number">03</div>
+
+<h3>ESG</h3>
+
+<p>
+A framework for understanding environmental, social and governance factors that can affect organisations and investment decisions.
+</p>
+
+</div>
+
+</div>
+
+
+
+<h2 id="esg">
+03 — The rise of ESG
+</h2>
+
+<p>
+ESG — Environmental, Social and Governance — brought another important dimension into the conversation.
+</p>
+
+<p>
+Rather than asking only whether a company is responsible, ESG increasingly asks how environmental, social and governance factors can affect organisational performance, risk, resilience and value.
+</p>
+
+<p>
+This helped move sustainability closer to investors, financial markets, boards and mainstream corporate decision-making.
+</p>
+
+<p>
+The three letters themselves are not the destination. They are a way of organising information and thinking about issues that may be financially and strategically relevant.
+</p>
+
+
+
+<h2 id="changed">
+04 — What actually changed?
+</h2>
+
+<p>
+The biggest change was not the arrival of another acronym.
+</p>
+
+<p>
+It was the gradual movement of sustainability from the margins of corporate activity toward the centre of business decision-making.
+</p>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<strong>Earlier CSR thinking</strong>
+
+<h3>
+“Are we doing something good for society?”
+</h3>
+
+<p>
+Community investment, philanthropy, employee programmes and social initiatives were often the visible face of corporate responsibility.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<strong>Sustainability thinking</strong>
+
+<h3>
+“How can the organisation operate sustainably?”
+</h3>
+
+<p>
+Environmental and social impacts became increasingly connected to operations, resources, stakeholders and long-term resilience.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<strong>ESG thinking</strong>
+
+<h3>
+“What environmental, social and governance factors matter to the organisation and its stakeholders?”
+</h3>
+
+<p>
+The conversation increasingly entered boardrooms, investment decisions, risk management and corporate reporting.
+</p>
+
+</div>
+
+</div>
+
+
+
+<h2 id="confusion">
+05 — Why companies still get confused
+</h2>
+
+<p>
+The problem is that the terms have evolved at different times, in different communities and for different purposes.
+</p>
+
+<p>
+CSR, sustainability and ESG can therefore coexist inside the same organisation — sometimes without anyone being entirely clear about how they relate to each other.
+</p>
+
+<p>
+A company may have a CSR department, a sustainability strategy, an ESG committee and an annual sustainability report.
+</p>
+
+<p>
+That does not necessarily mean it has a coherent sustainability approach.
+</p>
+
+<div class="callout">
+
+<p>
+The presence of ESG structures does not automatically mean sustainability is embedded in the business.
+</p>
+
+</div>
+
+
+
+<h2 id="strategy">
+06 — From reporting to strategy
+</h2>
+
+<p>
+This is where the distinction becomes important for management.
+</p>
+
+<p>
+A company can produce a sophisticated sustainability report while its sustainability strategy remains weak.
+</p>
+
+<p>
+It can have ambitious targets without a credible implementation plan.
+</p>
+
+<p>
+It can establish governance structures without creating genuine accountability.
+</p>
+
+<p>
+And it can communicate impressive commitments without changing the decisions that drive environmental and social outcomes.
+</p>
+
+<p>
+The real test is therefore not the sophistication of the terminology.
+</p>
+
+<p>
+The real test is whether sustainability influences how the organisation makes decisions.
+</p>
+
+
+
+<!-- MERIDIAN PERSPECTIVE -->
+
+<div class="meridian-perspective" id="perspective">
+
+<div class="eyebrow">
+The Meridian Perspective
+</div>
+
+<h2>
+Don't get trapped by the labels.
+</h2>
+
+<p>
+CSR, sustainability and ESG represent different stages in the evolution of corporate thinking.
+
+But organisations sometimes spend too much energy deciding which label to use — and too little asking whether the underlying issues are actually being managed.
+</p>
+
+<p>
+A strong sustainability approach should connect responsibility, impact, risk, opportunity, governance and business strategy.
+</p>
+
+<p class="perspective-question">
+The better question is not “Are we doing ESG?”
+
+<br><br>
+
+It is:
+
+<strong>“Is sustainability changing the way we run the business?”</strong>
+</p>
+
+</div>
+
+
+
+<!-- FIVE QUESTIONS -->
+
+<div class="questions" id="questions">
+
+<h2>
+07 — Five questions for management
+</h2>
+
+
+<div class="question">
+
+<div class="question-number">01</div>
+
+<div>
+
+<h3>What sustainability issues are genuinely material to our business?</h3>
+
+<p>
+Not every issue deserves equal attention.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="question">
+
+<div class="question-number">02</div>
+
+<div>
+
+<h3>Who is accountable for delivering our sustainability commitments?</h3>
+
+<p>
+Responsibility without accountability rarely produces sustained results.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="question">
+
+<div class="question-number">03</div>
+
+<div>
+
+<h3>Are our targets supported by a credible implementation plan?</h3>
+
+<p>
+Ambition is not the same as execution.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="question">
+
+<div class="question-number">04</div>
+
+<div>
+
+<h3>What has actually changed in our business because of sustainability?</h3>
+
+<p>
+Look for changes in decisions, investment, operations and behaviour.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="question">
+
+<div class="question-number">05</div>
+
+<div>
+
+<h3>Would our stakeholders recognise the difference?</h3>
+
+<p>
+Ultimately, sustainability is experienced in the real world — not only in reports.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</article>
+
+</div>
+
+
+
+<!-- RELATED -->
+
+<section class="related">
+
+<div class="container">
+
+<div class="eyebrow">
+Continue Exploring
+</div>
+
+<h2>
+Related Meridian Knowledge
+</h2>
+
+
+<div class="related-grid">
+
+<div class="related-card">
+
+<strong>How Sustainability Reporting Has Evolved</strong>
+
+<span>
+From voluntary disclosure to today's changing reporting landscape.
+</span>
+
+</div>
+
+
+<div class="related-card">
+
+<strong>Materiality: The Question Behind ESG</strong>
+
+<span>
+Why deciding what matters may be more important than reporting everything.
+</span>
+
+</div>
+
+
+<div class="related-card">
+
+<strong>What Makes a Sustainability Strategy?</strong>
+
+<span>
+The difference between commitments, targets and genuine strategy.
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-inner">
+
+<div>
+
+<div class="footer-brand">
+MERIDIAN ESG
+</div>
+
+<div class="footer-copy">
+Where Sustainability Knowledge Meets Business Reality.
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+<a href="knowledge.html">Knowledge</a>
+<a href="index.html#insights">Insights</a>
+<a href="index.html#about">About</a>
+
+</div>
+
+
+<div class="footer-copy">
+© 2026 Meridian ESG
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
