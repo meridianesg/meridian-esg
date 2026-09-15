@@ -6,21 +6,21 @@
 
 <title>Intelligence | Meridian ESG</title>
 
-<meta name="description" content="Meridian ESG Intelligence — tracking the regulatory, reporting, market and business signals shaping sustainability in Southeast Asia.">
+<meta name="description" content="Meridian ESG Intelligence — understanding the signals shaping sustainability, ESG and responsible business across Southeast Asia.">
 
 <style>
 
 :root{
     --navy:#08263a;
-    --navy2:#0d344b;
+    --navy2:#103b52;
     --teal:#00aeb3;
-    --teal-dark:#07888e;
+    --teal-light:#65d8d8;
     --ivory:#f7f5ef;
-    --cream:#eeeade;
+    --cream:#ece8dc;
     --white:#ffffff;
     --text:#193247;
-    --muted:#61717d;
-    --line:#d9e0df;
+    --muted:#65747d;
+    --line:#d9dfdd;
 }
 
 *{
@@ -34,15 +34,15 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     color:var(--text);
     background:var(--ivory);
     line-height:1.7;
 }
 
 a{
-    color:inherit;
     text-decoration:none;
+    color:inherit;
 }
 
 /* HEADER */
@@ -50,10 +50,10 @@ a{
 header{
     background:var(--navy);
     color:white;
-    padding:17px 6%;
+    padding:16px 6%;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
     position:sticky;
     top:0;
     z-index:1000;
@@ -62,7 +62,7 @@ header{
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:11px;
 }
 
 .logo-mark{
@@ -76,36 +76,35 @@ header{
 .logo-mark:after{
     content:"";
     position:absolute;
-    width:13px;
+    width:14px;
     height:3px;
     background:var(--teal);
     transform:rotate(-45deg);
+    left:10px;
     top:16px;
-    left:11px;
 }
 
 .logo-text{
-    font-family:Georgia, serif;
+    font-family:Georgia,serif;
     font-size:20px;
     letter-spacing:4px;
 }
 
 .logo-sub{
     display:block;
+    color:#b8d0d4;
     font-size:8px;
     letter-spacing:2px;
-    color:#b9d2d6;
-    margin-top:1px;
 }
 
 nav{
     display:flex;
-    gap:28px;
-    font-size:14px;
+    gap:27px;
+    font-size:13px;
 }
 
 nav a{
-    color:#dce7ea;
+    color:#d5e3e6;
     padding-bottom:5px;
 }
 
@@ -119,23 +118,34 @@ nav a.active{
 
 .hero{
     background:
-        linear-gradient(110deg,rgba(5,29,45,.97),rgba(8,38,58,.88)),
-        radial-gradient(circle at 80% 20%,rgba(0,174,179,.28),transparent 35%);
+        linear-gradient(110deg,rgba(5,28,43,.98),rgba(8,38,58,.86)),
+        radial-gradient(circle at 78% 30%,rgba(0,174,179,.35),transparent 32%);
     color:white;
-    padding:95px 7% 90px;
-    position:relative;
+    padding:105px 7% 100px;
     overflow:hidden;
+    position:relative;
 }
 
+.hero:before,
 .hero:after{
     content:"";
     position:absolute;
-    width:500px;
-    height:500px;
-    border:1px solid rgba(0,174,179,.22);
+    border:1px solid rgba(91,215,216,.18);
     border-radius:50%;
-    right:-160px;
-    top:-180px;
+}
+
+.hero:before{
+    width:620px;
+    height:620px;
+    right:-260px;
+    top:-280px;
+}
+
+.hero:after{
+    width:350px;
+    height:350px;
+    right:80px;
+    bottom:-250px;
 }
 
 .hero-inner{
@@ -146,10 +156,10 @@ nav a.active{
 }
 
 .eyebrow{
-    color:#55d3d5;
+    color:var(--teal-light);
     text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:12px;
+    letter-spacing:2.5px;
+    font-size:11px;
     font-weight:bold;
     margin-bottom:20px;
 }
@@ -157,340 +167,526 @@ nav a.active{
 .hero h1{
     font-family:Georgia,serif;
     font-weight:normal;
-    font-size:clamp(45px,6vw,76px);
-    line-height:1.04;
-    max-width:850px;
-    margin-bottom:25px;
+    font-size:clamp(48px,7vw,84px);
+    line-height:1.02;
+    max-width:900px;
 }
 
 .hero h1 span{
-    color:#43d2d2;
+    color:var(--teal-light);
 }
 
-.hero p{
+.hero-description{
     max-width:720px;
     font-family:Georgia,serif;
     font-size:21px;
-    color:#dbe8eb;
+    color:#d5e3e6;
+    margin-top:27px;
 }
 
-.hero-note{
-    margin-top:35px;
-    display:inline-block;
-    border-left:3px solid var(--teal);
-    padding-left:18px;
-    color:#bcd1d5;
-    font-size:14px;
+.hero-bottom{
+    margin-top:48px;
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
 
-/* SIGNAL STRIP */
-
-.signal-strip{
-    background:white;
-    border-bottom:1px solid var(--line);
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+.hero-line{
+    width:70px;
+    height:2px;
+    background:var(--teal);
 }
 
-.signal-item{
-    padding:24px 28px;
-    border-right:1px solid var(--line);
-}
-
-.signal-item:last-child{
-    border-right:none;
-}
-
-.signal-number{
-    color:var(--teal);
-    font-size:12px;
-    font-weight:bold;
-    letter-spacing:1px;
-}
-
-.signal-item h3{
-    font-family:Georgia,serif;
-    font-size:19px;
-    margin:5px 0;
-}
-
-.signal-item p{
+.hero-bottom span{
     font-size:13px;
-    color:var(--muted);
+    color:#b8cdd1;
 }
 
-/* MAIN */
+/* FEATURED SIGNAL */
 
-.container{
-    max-width:1180px;
-    margin:auto;
+.featured{
+    background:white;
     padding:85px 6%;
 }
 
-.section-intro{
-    max-width:760px;
-    margin-bottom:55px;
-}
-
-.section-intro .eyebrow{
-    color:var(--teal-dark);
-}
-
-.section-intro h2{
-    font-family:Georgia,serif;
-    font-weight:normal;
-    font-size:42px;
-    line-height:1.15;
-    margin-bottom:18px;
-}
-
-.section-intro p{
-    color:var(--muted);
-    font-size:17px;
-}
-
-/* INTELLIGENCE CARDS */
-
-.intelligence-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
-
-.intel-card{
-    background:white;
-    border:1px solid var(--line);
-    padding:34px;
-    position:relative;
-    transition:.25s ease;
-}
-
-.intel-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 15px 35px rgba(8,38,58,.09);
-}
-
-.card-number{
-    color:var(--teal);
-    font-size:12px;
-    font-weight:bold;
-    letter-spacing:1px;
-}
-
-.intel-card h3{
-    font-family:Georgia,serif;
-    font-weight:normal;
-    font-size:29px;
-    margin:12px 0;
-}
-
-.intel-card p{
-    color:var(--muted);
-    font-size:15px;
-    margin-bottom:20px;
-}
-
-.signal-tag{
-    display:inline-block;
-    padding:6px 10px;
-    background:#edf7f6;
-    color:var(--teal-dark);
-    font-size:11px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:18px;
-}
-
-.why{
-    border-top:1px solid var(--line);
-    padding-top:18px;
-}
-
-.why strong{
-    color:var(--navy);
-    display:block;
-    font-size:13px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:5px;
-}
-
-.why p{
-    margin:0;
-    color:var(--text);
-}
-
-/* FEATURE */
-
-.feature{
-    background:var(--navy);
-    color:white;
-    padding:65px 7%;
-    margin-top:15px;
-}
-
-.feature-inner{
+.featured-inner{
     max-width:1180px;
     margin:auto;
     display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:70px;
+    grid-template-columns:1.25fr .75fr;
+    gap:65px;
     align-items:center;
 }
 
-.feature h2{
+.featured-main{
+    border-left:4px solid var(--teal);
+    padding-left:38px;
+}
+
+.featured-main .label{
+    color:var(--teal-dark);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.featured-main h2{
     font-family:Georgia,serif;
-    font-size:43px;
     font-weight:normal;
-    line-height:1.15;
-    margin-bottom:20px;
+    font-size:48px;
+    line-height:1.13;
+    margin-bottom:22px;
 }
 
-.feature p{
-    color:#cbdde0;
-    font-size:16px;
+.featured-main p{
+    color:var(--muted);
+    font-size:17px;
+    max-width:720px;
 }
 
-.feature-box{
-    border:1px solid rgba(255,255,255,.18);
-    padding:30px;
-}
-
-.feature-box .big{
-    color:#55d3d5;
+.featured-question{
+    margin-top:28px;
     font-family:Georgia,serif;
-    font-size:38px;
+    font-size:23px;
+    color:var(--navy);
+}
+
+.featured-box{
+    background:var(--navy);
+    color:white;
+    padding:38px;
+}
+
+.featured-box small{
+    color:var(--teal-light);
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.featured-box h3{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:29px;
+    line-height:1.2;
+    margin:18px 0;
+}
+
+.featured-box p{
+    color:#c7d9dc;
+    font-size:14px;
+}
+
+/* SIGNAL MAP */
+
+.signal-map{
+    background:var(--cream);
+    padding:75px 6%;
+}
+
+.signal-map-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.signal-map-heading{
+    max-width:650px;
+    margin-bottom:45px;
+}
+
+.signal-map-heading h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:43px;
     line-height:1.15;
     margin-bottom:15px;
 }
 
-.feature-box p{
-    font-size:14px;
+.signal-map-heading p{
+    color:var(--muted);
 }
 
-/* FIVE QUESTIONS */
-
-.questions{
-    background:#eaf4f3;
-}
-
-.question-grid{
+.signal-flow{
     display:grid;
     grid-template-columns:repeat(5,1fr);
-    gap:12px;
+    gap:2px;
 }
 
-.question{
+.signal{
     background:white;
-    padding:25px 18px;
     min-height:190px;
-    border-top:3px solid var(--teal);
+    padding:27px 20px;
+    position:relative;
 }
 
-.question span{
+.signal:not(:last-child):after{
+    content:"→";
+    position:absolute;
+    right:-13px;
+    top:76px;
     color:var(--teal);
-    font-weight:bold;
-    font-size:13px;
+    font-size:21px;
+    z-index:2;
 }
 
-.question h3{
+.signal-number{
+    color:var(--teal);
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.signal h3{
     font-family:Georgia,serif;
     font-weight:normal;
-    font-size:19px;
+    font-size:22px;
     margin:12px 0;
 }
 
-.question p{
+.signal p{
     color:var(--muted);
+    font-size:13px;
+}
+
+/* EDITORIAL STORIES */
+
+.stories{
+    background:var(--ivory);
+    padding:95px 6%;
+}
+
+.stories-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.stories-heading{
+    margin-bottom:65px;
+}
+
+.stories-heading h2{
+    font-family:Georgia,serif;
+    font-size:44px;
+    font-weight:normal;
+    margin-bottom:15px;
+}
+
+.stories-heading p{
+    color:var(--muted);
+    max-width:680px;
+}
+
+.story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    min-height:390px;
+    margin-bottom:55px;
+}
+
+.story-visual{
+    background:
+        linear-gradient(145deg,#0a3449,#116477);
+    position:relative;
+    overflow:hidden;
+}
+
+.story:nth-child(even) .story-visual{
+    background:
+        linear-gradient(145deg,#dce9e7,#9dc9c6);
+}
+
+.story-visual:before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:50%;
+    left:12%;
+    top:12%;
+}
+
+.story-visual:after{
+    content:"";
+    position:absolute;
+    width:160px;
+    height:160px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:50%;
+    right:10%;
+    bottom:10%;
+}
+
+.story:nth-child(even) .story-visual:before,
+.story:nth-child(even) .story-visual:after{
+    border-color:rgba(8,38,58,.18);
+}
+
+.visual-word{
+    position:absolute;
+    bottom:25px;
+    left:28px;
+    color:rgba(255,255,255,.85);
+    font-family:Georgia,serif;
+    font-size:42px;
+    z-index:2;
+}
+
+.story:nth-child(even) .visual-word{
+    color:rgba(8,38,58,.7);
+}
+
+.story-content{
+    background:white;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.story-content .number{
+    color:var(--teal);
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.story-content h3{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:36px;
+    line-height:1.15;
+    margin:14px 0 18px;
+}
+
+.story-content p{
+    color:var(--muted);
+    font-size:15px;
+}
+
+.story-content .why{
+    border-top:1px solid var(--line);
+    margin-top:25px;
+    padding-top:17px;
+}
+
+.story-content .why strong{
+    color:var(--navy);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.story-content .why p{
+    margin-top:5px;
+    color:var(--text);
+}
+
+/* MERIDIAN FIVE */
+
+.five{
+    background:var(--navy);
+    color:white;
+    padding:90px 6%;
+}
+
+.five-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.five-heading{
+    max-width:680px;
+    margin-bottom:55px;
+}
+
+.five-heading h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:46px;
+    line-height:1.12;
+    margin-bottom:17px;
+}
+
+.five-heading p{
+    color:#c6d9dc;
+}
+
+.five-list{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.five-item{
+    padding:28px 20px 20px;
+    border-right:1px solid rgba(255,255,255,.15);
+    min-height:190px;
+}
+
+.five-item:last-child{
+    border-right:none;
+}
+
+.five-item .num{
+    color:var(--teal-light);
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+.five-item h3{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:20px;
+    margin:12px 0;
+}
+
+.five-item p{
+    color:#b8ced2;
     font-size:13px;
 }
 
 /* REGIONAL */
 
 .regional{
+    padding:95px 6%;
+    background:white;
+}
+
+.regional-inner{
+    max-width:1180px;
+    margin:auto;
     display:grid;
     grid-template-columns:.9fr 1.1fr;
-    gap:55px;
+    gap:70px;
     align-items:center;
 }
 
 .regional-visual{
-    min-height:390px;
+    min-height:430px;
     background:
-        radial-gradient(circle at 35% 35%,rgba(0,174,179,.35),transparent 12%),
-        radial-gradient(circle at 65% 50%,rgba(0,174,179,.25),transparent 18%),
-        linear-gradient(145deg,#0b3047,#08263a);
+        radial-gradient(circle at 30% 32%,rgba(0,174,179,.45),transparent 12%),
+        radial-gradient(circle at 68% 52%,rgba(0,174,179,.35),transparent 17%),
+        linear-gradient(145deg,#092b40,#071e2e);
     position:relative;
     overflow:hidden;
 }
 
 .regional-visual:before{
-    content:"SOUTHEAST ASIA";
+    content:"SOUTHEAST";
     position:absolute;
-    color:rgba(255,255,255,.13);
+    color:rgba(255,255,255,.12);
     font-family:Georgia,serif;
-    font-size:52px;
+    font-size:66px;
     transform:rotate(-20deg);
-    top:140px;
-    left:-15px;
+    left:-20px;
+    top:145px;
 }
 
 .regional-visual:after{
-    content:"INDONESIA • ASEAN • ASIA";
+    content:"ASIA";
     position:absolute;
-    bottom:25px;
-    left:30px;
-    color:#62d4d5;
-    font-size:11px;
-    letter-spacing:2px;
+    color:rgba(93,214,215,.8);
+    font-family:Georgia,serif;
+    font-size:55px;
+    right:45px;
+    bottom:35px;
 }
 
-.regional h2{
+.regional-content .eyebrow{
+    color:var(--teal-dark);
+}
+
+.regional-content h2{
     font-family:Georgia,serif;
     font-weight:normal;
-    font-size:42px;
-    line-height:1.15;
+    font-size:46px;
+    line-height:1.12;
+    margin-bottom:22px;
+}
+
+.regional-content p{
+    color:var(--muted);
+    margin-bottom:17px;
+}
+
+.regional-note{
+    margin-top:27px;
+    border-left:3px solid var(--teal);
+    padding-left:18px;
+    font-family:Georgia,serif;
+    font-size:20px;
+}
+
+/* PERSPECTIVE */
+
+.perspective{
+    background:var(--cream);
+    padding:80px 6%;
+}
+
+.perspective-inner{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.perspective h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:43px;
     margin-bottom:20px;
 }
 
-.regional p{
+.perspective p{
+    max-width:720px;
+    margin:auto;
     color:var(--muted);
-    margin-bottom:18px;
+    font-size:17px;
+}
+
+.quote{
+    margin-top:35px;
+    font-family:Georgia,serif;
+    font-size:27px;
+    color:var(--navy);
 }
 
 /* CTA */
 
 .cta{
-    background:var(--cream);
+    background:var(--teal);
+    color:white;
+    padding:75px 6%;
     text-align:center;
-    padding:80px 6%;
 }
 
 .cta h2{
     font-family:Georgia,serif;
-    font-size:43px;
     font-weight:normal;
-    margin-bottom:18px;
+    font-size:43px;
+    margin-bottom:15px;
 }
 
 .cta p{
     max-width:650px;
-    margin:auto auto 28px;
-    color:var(--muted);
+    margin:auto auto 27px;
+    color:#e5ffff;
 }
 
 .button{
     display:inline-block;
     background:var(--navy);
     color:white;
-    padding:14px 26px;
-    font-size:13px;
-    letter-spacing:1px;
+    padding:14px 25px;
     text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:12px;
 }
 
 .button:hover{
-    background:var(--teal-dark);
+    background:#061d2b;
 }
 
 /* FOOTER */
@@ -527,7 +723,7 @@ footer p{
 }
 
 .footer-links a:hover{
-    color:#55d3d5;
+    color:var(--teal-light);
 }
 
 /* MOBILE */
@@ -536,32 +732,39 @@ footer p{
 
     nav{
         gap:12px;
-        font-size:12px;
+        font-size:11px;
     }
 
-    .signal-strip{
+    .featured-inner,
+    .regional-inner{
+        grid-template-columns:1fr;
+    }
+
+    .signal-flow{
+        grid-template-columns:1fr;
+    }
+
+    .signal:not(:last-child):after{
+        content:"↓";
+        right:50%;
+        top:auto;
+        bottom:-18px;
+    }
+
+    .story{
+        grid-template-columns:1fr;
+    }
+
+    .story-visual{
+        min-height:260px;
+    }
+
+    .five-list{
         grid-template-columns:1fr 1fr;
     }
 
-    .signal-item:nth-child(2){
+    .five-item:nth-child(2){
         border-right:none;
-    }
-
-    .intelligence-grid{
-        grid-template-columns:1fr;
-    }
-
-    .feature-inner,
-    .regional{
-        grid-template-columns:1fr;
-    }
-
-    .question-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-inner{
-        flex-direction:column;
     }
 
 }
@@ -581,35 +784,52 @@ footer p{
     }
 
     .hero{
-        padding:70px 6%;
+        padding:75px 6%;
     }
 
     .hero h1{
-        font-size:45px;
+        font-size:48px;
     }
 
-    .signal-strip{
-        grid-template-columns:1fr;
+    .featured,
+    .stories,
+    .regional,
+    .five{
+        padding:65px 6%;
     }
 
-    .signal-item{
-        border-right:none;
-        border-bottom:1px solid var(--line);
+    .featured-main{
+        padding-left:22px;
     }
 
-    .question-grid{
-        grid-template-columns:1fr;
-    }
-
-    .container{
-        padding:60px 6%;
-    }
-
-    .section-intro h2,
-    .feature h2,
-    .regional h2,
+    .featured-main h2,
+    .stories-heading h2,
+    .five-heading h2,
+    .regional-content h2,
+    .perspective h2,
     .cta h2{
         font-size:34px;
+    }
+
+    .story-content{
+        padding:32px;
+    }
+
+    .story-content h3{
+        font-size:29px;
+    }
+
+    .five-list{
+        grid-template-columns:1fr;
+    }
+
+    .five-item{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.15);
+    }
+
+    .footer-inner{
+        flex-direction:column;
     }
 
 }
@@ -622,20 +842,23 @@ footer p{
 <header>
 
 <a href="index.html" class="logo">
-    <div class="logo-mark"></div>
-    <div>
-        <div class="logo-text">MERIDIAN ESG</div>
-        <span class="logo-sub">SUSTAINABILITY INTELLIGENCE</span>
-    </div>
+
+<div class="logo-mark"></div>
+
+<div>
+<div class="logo-text">MERIDIAN ESG</div>
+<span class="logo-sub">SUSTAINABILITY INTELLIGENCE</span>
+</div>
+
 </a>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="intelligence.html" class="active">Intelligence</a>
-    <a href="knowledge.html">Knowledge</a>
-    <a href="insights.html">Insights</a>
-    <a href="navigator.html">Navigator</a>
-    <a href="about.html">About</a>
+<a href="index.html">Home</a>
+<a href="intelligence.html" class="active">Intelligence</a>
+<a href="knowledge.html">Knowledge</a>
+<a href="insights.html">Insights</a>
+<a href="navigator.html">Navigator</a>
+<a href="about.html">About</a>
 </nav>
 
 </header>
@@ -654,12 +877,13 @@ What is changing —
 <span>and why does it matter?</span>
 </h1>
 
-<p>
+<p class="hero-description">
 Sustainability is moving quickly. Regulations evolve. Standards change. Investors ask different questions. Business expectations shift.
 </p>
 
-<div class="hero-note">
-Meridian ESG tracks the signals behind the headlines — and interprets what they may mean for business.
+<div class="hero-bottom">
+<div class="hero-line"></div>
+<span>Understanding the signal behind the headline.</span>
 </div>
 
 </div>
@@ -667,201 +891,262 @@ Meridian ESG tracks the signals behind the headlines — and interprets what the
 </section>
 
 
-<!-- SIGNAL STRIP -->
+<!-- FEATURED SIGNAL -->
 
-<section class="signal-strip">
+<section class="featured">
 
-<div class="signal-item">
+<div class="featured-inner">
+
+<div class="featured-main">
+
+<div class="label">The Signal Right Now</div>
+
+<h2>
+Sustainability reporting is moving closer to mainstream corporate reporting.
+</h2>
+
+<p>
+The sustainability reporting conversation is changing. The emphasis is increasingly moving toward structured, comparable and decision-useful information — and toward the systems and governance needed to produce it.
+</p>
+
+<div class="featured-question">
+The important question is not simply: <em>“What must we report?”</em>
+</div>
+
+</div>
+
+<div class="featured-box">
+
+<small>Meridian Interpretation</small>
+
+<h3>
+What does this actually change?
+</h3>
+
+<p>
+It changes the conversation from producing a sustainability report to understanding how sustainability-related risks, opportunities and information connect with management decisions.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SIGNAL MAP -->
+
+<section class="signal-map">
+
+<div class="signal-map-inner">
+
+<div class="signal-map-heading">
+
+<div class="eyebrow" style="color:var(--teal-dark);">
+The Intelligence Map
+</div>
+
+<h2>
+Follow the signal across the system.
+</h2>
+
+<p>
+Sustainability developments rarely happen in isolation. Regulation influences standards. Standards influence reporting. Markets influence expectations. Business reality tests them all.
+</p>
+
+</div>
+
+<div class="signal-flow">
+
+<div class="signal">
 <div class="signal-number">01</div>
 <h3>Regulation</h3>
 <p>What governments and regulators are changing.</p>
 </div>
 
-<div class="signal-item">
+<div class="signal">
 <div class="signal-number">02</div>
 <h3>Standards</h3>
-<p>How sustainability reporting and disclosure are evolving.</p>
+<p>How reporting and disclosure expectations evolve.</p>
 </div>
 
-<div class="signal-item">
+<div class="signal">
 <div class="signal-number">03</div>
 <h3>Markets</h3>
-<p>What investors and capital markets increasingly care about.</p>
+<p>What investors and capital markets increasingly watch.</p>
 </div>
 
-<div class="signal-item">
+<div class="signal">
 <div class="signal-number">04</div>
 <h3>Business</h3>
-<p>What these developments mean in practice.</p>
+<p>How organisations respond in practice.</p>
+</div>
+
+<div class="signal">
+<div class="signal-number">05</div>
+<h3>Stakeholders</h3>
+<p>How expectations and trust continue to change.</p>
+</div>
+
+</div>
+
 </div>
 
 </section>
 
 
-<!-- INTRO -->
+<!-- EDITORIAL STORIES -->
 
-<section class="container">
+<section class="stories">
 
-<div class="section-intro">
+<div class="stories-inner">
 
-<div class="eyebrow">The Intelligence Layer</div>
+<div class="stories-heading">
+
+<div class="eyebrow" style="color:var(--teal-dark);">
+Signals To Watch
+</div>
 
 <h2>
-Information tells you what happened.
-Intelligence helps you understand why.
+The story behind the development.
 </h2>
 
 <p>
-There is no shortage of sustainability information. The challenge is separating important signals from background noise — and understanding what those signals mean for strategy, risk, governance and business decisions.
+Meridian does not simply collect sustainability news. The objective is to identify the development, understand its significance and explore what decision-makers should be thinking about.
 </p>
 
 </div>
 
 
-<!-- CARDS -->
+<!-- STORY 1 -->
 
-<div class="intelligence-grid">
+<article class="story">
 
+<div class="story-visual">
+<div class="visual-word">REGULATION</div>
+</div>
 
-<article class="intel-card">
+<div class="story-content">
 
-<div class="card-number">01 · REGULATORY SIGNALS</div>
+<div class="number">01 · REGULATORY SIGNAL</div>
 
 <h3>
-The rules are changing.
+The rules are becoming harder to ignore.
 </h3>
 
 <p>
-Across Southeast Asia, sustainability expectations are becoming increasingly connected to regulation, disclosure and corporate governance.
+Sustainability expectations are increasingly moving from voluntary commitments toward more structured regulatory and disclosure requirements.
 </p>
-
-<div class="signal-tag">Watch</div>
 
 <div class="why">
 <strong>Why it matters</strong>
 <p>
-Regulatory change can affect reporting requirements, governance responsibilities, data systems and ultimately the cost of doing business.
+Regulatory change can affect governance responsibilities, reporting systems, data quality and ultimately business risk.
 </p>
 </div>
 
-</article>
-
-
-<article class="intel-card">
-
-<div class="card-number">02 · STANDARDS & REPORTING</div>
-
-<h3>
-From reporting to decision-useful information.
-</h3>
-
-<p>
-The sustainability reporting landscape is becoming more structured, more comparable and increasingly connected to financial information.
-</p>
-
-<div class="signal-tag">Watch</div>
-
-<div class="why">
-<strong>Why it matters</strong>
-<p>
-Reporting is no longer simply about producing a sustainability report. The quality of underlying data and governance increasingly matters.
-</p>
 </div>
 
 </article>
 
 
-<article class="intel-card">
+<!-- STORY 2 -->
 
-<div class="card-number">03 · MARKET SIGNALS</div>
+<article class="story">
+
+<div class="story-content">
+
+<div class="number">02 · MARKET SIGNAL</div>
 
 <h3>
-Investors are asking different questions.
+Investors are asking better questions.
 </h3>
 
 <p>
-Environmental, social and governance issues increasingly intersect with enterprise risk, resilience, capital allocation and long-term value.
+Environmental, social and governance issues increasingly intersect with resilience, risk, capital allocation and long-term enterprise value.
 </p>
-
-<div class="signal-tag">Interpret</div>
 
 <div class="why">
 <strong>Why it matters</strong>
 <p>
-Companies need to understand which sustainability issues can genuinely influence business performance and investor decisions.
+The challenge is not to report everything. It is to understand which issues can genuinely influence decisions.
 </p>
+</div>
+
+</div>
+
+<div class="story-visual">
+
+<div class="visual-word">MARKETS</div>
+
 </div>
 
 </article>
 
 
-<article class="intel-card">
+<!-- STORY 3 -->
 
-<div class="card-number">04 · SECTOR SIGNALS</div>
+<article class="story">
+
+<div class="story-visual">
+
+<div class="visual-word">SECTORS</div>
+
+</div>
+
+<div class="story-content">
+
+<div class="number">03 · SECTOR SIGNAL</div>
 
 <h3>
-The sustainability challenge is not the same for every industry.
+Materiality looks different from one industry to another.
 </h3>
 
 <p>
-Mining, energy, finance, manufacturing, commodities and infrastructure face very different material issues and stakeholder expectations.
+Mining, energy, finance, manufacturing, commodities and infrastructure face very different sustainability challenges.
 </p>
-
-<div class="signal-tag">Explore</div>
 
 <div class="why">
 <strong>Why it matters</strong>
 <p>
-Generic ESG advice can miss the issues that matter most to a particular sector, business model or operating environment.
+Generic ESG advice can miss the issues that matter most to a particular business model and operating environment.
 </p>
+</div>
+
 </div>
 
 </article>
 
 
-<article class="intel-card">
+<!-- STORY 4 -->
 
-<div class="card-number">05 · STAKEHOLDER SIGNALS</div>
+<article class="story">
+
+<div class="story-content">
+
+<div class="number">04 · STAKEHOLDER SIGNAL</div>
 
 <h3>
-Expectations are changing beyond investors.
+Trust is increasingly tested beyond the report.
 </h3>
 
 <p>
-Communities, employees, governments, customers, civil society and business partners increasingly influence corporate expectations.
+Communities, employees, governments, customers, civil society and business partners all shape corporate expectations.
 </p>
-
-<div class="signal-tag">Interpret</div>
 
 <div class="why">
 <strong>Why it matters</strong>
 <p>
-Trust is increasingly shaped by what an organisation actually does — not simply what it says in a report.
+A strong sustainability report cannot compensate for a weak sustainability reality.
 </p>
 </div>
 
-</article>
+</div>
 
+<div class="story-visual">
 
-<article class="intel-card">
+<div class="visual-word">TRUST</div>
 
-<div class="card-number">06 · SOUTHEAST ASIA LENS</div>
-
-<h3>
-Global frameworks. Local realities.
-</h3>
-
-<p>
-International sustainability developments do not operate in a vacuum. Their implications differ across countries, sectors and institutional environments.
-</p>
-
-<div class="signal-tag">Regional lens</div>
-
-<div class="why">
-<strong>Why it matters</strong>
-<p>
-Understanding the regional context can be as important as understanding the global framework itself.
-</p>
 </div>
 
 </article>
@@ -871,56 +1156,13 @@ Understanding the regional context can be as important as understanding the glob
 </section>
 
 
-<!-- FEATURE -->
+<!-- MERIDIAN FIVE -->
 
-<section class="feature">
+<section class="five">
 
-<div class="feature-inner">
+<div class="five-inner">
 
-<div>
-
-<div class="eyebrow">Meridian Intelligence</div>
-
-<h2>
-Don't follow every headline.
-Understand the signal.
-</h2>
-
-<p>
-Sustainability is increasingly filled with new standards, acronyms, commitments, rankings and announcements.
-</p>
-
-<p style="margin-top:18px;">
-Meridian focuses on the question behind the headline:
-<strong>What does this actually change?</strong>
-</p>
-
-</div>
-
-<div class="feature-box">
-
-<div class="big">
-Signal → Meaning → Implication
-</div>
-
-<p>
-The Meridian approach is deliberately simple: identify what is changing, understand why it matters, and translate it into implications that decision-makers can use.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FIVE QUESTIONS -->
-
-<section class="questions">
-
-<div class="container">
-
-<div class="section-intro">
+<div class="five-heading">
 
 <div class="eyebrow">The Meridian Five</div>
 
@@ -929,40 +1171,39 @@ Every signal should lead to better questions.
 </h2>
 
 <p>
-Before reacting to the next sustainability development, ask:
+Before reacting to the next sustainability development, ask what it really means.
 </p>
 
 </div>
 
+<div class="five-list">
 
-<div class="question-grid">
-
-<div class="question">
-<span>01</span>
+<div class="five-item">
+<div class="num">01</div>
 <h3>What matters?</h3>
 <p>Which issues are genuinely material?</p>
 </div>
 
-<div class="question">
-<span>02</span>
+<div class="five-item">
+<div class="num">02</div>
 <h3>Why?</h3>
 <p>Why should the business or its stakeholders care?</p>
 </div>
 
-<div class="question">
-<span>03</span>
+<div class="five-item">
+<div class="num">03</div>
 <h3>What is changing?</h3>
 <p>Which expectations, rules or market signals are moving?</p>
 </div>
 
-<div class="question">
-<span>04</span>
+<div class="five-item">
+<div class="num">04</div>
 <h3>What should you do?</h3>
 <p>What needs to change in strategy, governance or operations?</p>
 </div>
 
-<div class="question">
-<span>05</span>
+<div class="five-item">
+<div class="num">05</div>
 <h3>What are others getting wrong?</h3>
 <p>Where is the gap between intention and reality?</p>
 </div>
@@ -974,22 +1215,22 @@ Before reacting to the next sustainability development, ask:
 </section>
 
 
-<!-- REGIONAL LENS -->
+<!-- REGIONAL -->
 
-<section class="container">
+<section class="regional">
 
-<div class="regional">
+<div class="regional-inner">
 
 <div class="regional-visual"></div>
 
-<div>
+<div class="regional-content">
 
-<div class="eyebrow" style="color:var(--teal-dark);">
+<div class="eyebrow">
 Southeast Asia Lens
 </div>
 
 <h2>
-Global sustainability.
+Global sustainability.<br>
 Regional reality.
 </h2>
 
@@ -1005,6 +1246,37 @@ The same framework can have very different implications depending on a company's
 Meridian brings a Southeast Asian lens to global sustainability developments — with particular attention to Indonesia and the realities of doing business in the region.
 </p>
 
+<div class="regional-note">
+Global knowledge is useful. Context is what makes it actionable.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PERSPECTIVE -->
+
+<section class="perspective">
+
+<div class="perspective-inner">
+
+<div class="eyebrow" style="color:var(--teal-dark);">
+Meridian Perspective
+</div>
+
+<h2>
+Where knowledge meets business reality.
+</h2>
+
+<p>
+Meridian is built around a simple idea: information becomes valuable when someone can interpret what it means in the real world.
+</p>
+
+<div class="quote">
+“Don't compete with Google by providing information. Compete by providing interpretation.”
 </div>
 
 </div>
@@ -1021,17 +1293,15 @@ Stay ahead of the signal.
 </h2>
 
 <p>
-Meridian Intelligence will progressively track the developments shaping sustainability, ESG and responsible business across Southeast Asia.
+Explore the Meridian knowledge library — or return as the Intelligence platform develops its regional signals and perspectives.
 </p>
 
 <a href="knowledge.html" class="button">
-Explore the Knowledge Library →
+Explore Knowledge →
 </a>
 
 </section>
 
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -1039,9 +1309,7 @@ Explore the Knowledge Library →
 
 <div>
 <h3>MERIDIAN ESG</h3>
-<p>
-Sustainability Intelligence for Southeast Asia.
-</p>
+<p>Sustainability Intelligence for Southeast Asia.</p>
 </div>
 
 <div class="footer-links">
