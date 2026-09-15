@@ -6,7 +6,7 @@
 
 <title>A Good Sustainability Report Can Still Hide a Bad Sustainability Strategy | Meridian ESG</title>
 
-<meta name="description" content="A sustainability report can be polished, comprehensive and credible while the underlying sustainability strategy remains weak. Meridian ESG explores what management should look beyond reporting.">
+<meta name="description" content="A good sustainability report does not necessarily mean a good sustainability strategy. An observation about what happens when reporting becomes easier than changing the business.">
 
 <style>
 *{
@@ -17,14 +17,14 @@
 
 body{
   font-family:Arial,Helvetica,sans-serif;
-  color:#18252d;
-  background:#f5f1e8;
-  line-height:1.7;
+  background:#f6f2e9;
+  color:#26383d;
+  line-height:1.75;
 }
 
 a{
-  color:inherit;
   text-decoration:none;
+  color:inherit;
 }
 
 .container{
@@ -32,31 +32,28 @@ a{
   margin:auto;
 }
 
-/* NAVIGATION */
+/* NAV */
 
 nav{
-  background:#10252d;
-  color:#fff;
+  background:#10262e;
+  color:white;
   padding:20px 0;
-  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .nav-inner{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:30px;
 }
 
 .logo{
   font-family:Georgia,serif;
   font-size:24px;
   font-weight:bold;
-  letter-spacing:-.5px;
 }
 
 .logo span{
-  color:#4fb6aa;
+  color:#61b9ae;
 }
 
 .nav-links{
@@ -66,308 +63,319 @@ nav{
 }
 
 .nav-links a{
-  opacity:.82;
+  color:#d9e3e3;
 }
 
 .nav-links a:hover{
-  opacity:1;
   color:#70c8bd;
 }
 
 /* HERO */
 
 .hero{
-  background:#10252d;
-  color:#fff;
-  padding:90px 0 100px;
+  background:#10262e;
+  color:white;
+  padding:95px 0 105px;
 }
 
-.kicker{
+.hero-inner{
+  max-width:980px;
+}
+
+.eyebrow{
   color:#70c8bd;
   text-transform:uppercase;
   letter-spacing:2px;
-  font-size:12px;
+  font-size:11px;
   font-weight:bold;
-  margin-bottom:24px;
+  margin-bottom:25px;
 }
 
 .hero h1{
   font-family:Georgia,serif;
-  font-size:clamp(42px,6vw,72px);
-  line-height:1.08;
-  max-width:900px;
-  letter-spacing:-2px;
+  font-size:clamp(44px,6.3vw,76px);
+  line-height:1.05;
+  letter-spacing:-2.5px;
+  max-width:920px;
   margin-bottom:30px;
 }
 
 .hero-intro{
-  font-size:20px;
-  line-height:1.65;
   max-width:760px;
-  color:#d7e2e2;
+  font-size:21px;
+  line-height:1.65;
+  color:#d5e1e1;
 }
 
-.meta{
-  margin-top:35px;
+.article-meta{
+  margin-top:32px;
   font-size:13px;
-  color:#9db0b3;
+  color:#8fa5a9;
 }
 
 /* ARTICLE */
 
-.article-wrap{
-  padding:75px 0 100px;
+.article-section{
+  padding:80px 0 100px;
 }
 
-.article-grid{
+.article-layout{
   display:grid;
-  grid-template-columns:180px 1fr;
+  grid-template-columns:170px minmax(0,720px);
   gap:70px;
-  max-width:1000px;
-  margin:auto;
+  justify-content:center;
 }
 
 .article-side{
-  position:relative;
+  padding-top:8px;
 }
 
-.side-label{
+.side-title{
   text-transform:uppercase;
   letter-spacing:1.5px;
-  font-size:11px;
+  font-size:10px;
   font-weight:bold;
-  color:#718388;
-  margin-bottom:15px;
+  color:#748589;
 }
 
-.side-line{
-  width:35px;
+.side-rule{
+  width:32px;
   height:3px;
-  background:#4fb6aa;
-  margin-bottom:20px;
+  background:#56aaa0;
+  margin:15px 0;
 }
 
-.article-side p{
+.side-text{
   font-size:13px;
-  color:#68777b;
+  color:#718084;
   line-height:1.6;
 }
 
-.article h2{
+.article p{
+  font-size:18px;
+  margin-bottom:25px;
+  color:#3b4b50;
+}
+
+.article .opening{
+  font-family:Georgia,serif;
+  font-size:26px;
+  line-height:1.55;
+  color:#20383e;
+  margin-bottom:38px;
+}
+
+/* EMPHASIS */
+
+.big-question{
+  margin:55px 0;
+  padding:42px 45px;
+  background:#e2ece9;
+  border-left:5px solid #56aaa0;
+}
+
+.big-question small{
+  display:block;
+  text-transform:uppercase;
+  letter-spacing:1.8px;
+  color:#52847e;
+  font-size:10px;
+  font-weight:bold;
+  margin-bottom:14px;
+}
+
+.big-question h2{
   font-family:Georgia,serif;
   font-size:34px;
   line-height:1.25;
-  color:#142932;
-  margin:50px 0 20px;
+  color:#17353b;
 }
 
-.article h2:first-child{
+/* HEADINGS */
+
+.article h2{
+  font-family:Georgia,serif;
+  font-size:36px;
+  line-height:1.25;
+  color:#18343b;
+  margin:58px 0 22px;
+}
+
+.article h3{
+  font-family:Georgia,serif;
+  font-size:25px;
+  line-height:1.35;
+  color:#19353c;
+  margin:38px 0 12px;
+}
+
+/* OBSERVATIONS */
+
+.observation{
+  margin:38px 0;
+  padding:25px 0 25px 30px;
+  border-left:1px solid #b9c7c4;
+}
+
+.observation h3{
   margin-top:0;
 }
 
-.article p{
-  font-size:17px;
-  color:#39484d;
-  margin-bottom:22px;
-}
-
-.article strong{
-  color:#142932;
-}
-
-.lead{
-  font-family:Georgia,serif;
-  font-size:25px !important;
-  line-height:1.5;
-  color:#20383f !important;
-  margin-bottom:35px !important;
-}
-
-/* FEATURE QUESTION */
-
-.question{
-  margin:45px 0;
-  padding:45px;
-  background:#e4eeeb;
-  border-left:5px solid #4fb6aa;
-}
-
-.question-label{
-  text-transform:uppercase;
-  letter-spacing:2px;
-  font-size:11px;
-  font-weight:bold;
-  color:#497b75;
-  margin-bottom:15px;
-}
-
-.question h3{
-  font-family:Georgia,serif;
-  font-size:31px;
-  line-height:1.3;
-  color:#16343a;
-}
-
-/* SIGNALS */
-
-.signal{
-  margin:38px 0;
-  padding:30px 0 30px 30px;
-  border-left:1px solid #bdc9c7;
-}
-
-.signal-number{
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:2px;
-  color:#4c9188;
-  margin-bottom:8px;
-}
-
-.signal h3{
-  font-family:Georgia,serif;
-  font-size:25px;
-  margin-bottom:10px;
-  color:#18323a;
-}
-
-.signal p{
+.observation p{
   margin-bottom:0;
 }
 
-/* MERIDIAN PERSPECTIVE */
+/* QUOTE */
 
-.perspective{
-  margin:65px 0;
-  padding:55px;
-  background:#10252d;
-  color:#fff;
+.pullquote{
+  margin:60px 0;
+  padding:45px 0;
+  border-top:1px solid #c6cfcd;
+  border-bottom:1px solid #c6cfcd;
 }
 
-.perspective .kicker{
+.pullquote p{
+  font-family:Georgia,serif;
+  font-size:30px;
+  line-height:1.45;
+  color:#18373d;
+  margin:0;
+}
+
+/* PERSPECTIVE */
+
+.perspective{
+  margin:70px 0;
+  padding:50px;
+  background:#10262e;
+  color:white;
+}
+
+.perspective .eyebrow{
   margin-bottom:18px;
 }
 
 .perspective h2{
-  color:#fff;
+  color:white;
   margin:0 0 22px;
-  font-size:36px;
 }
 
 .perspective p{
-  color:#d4e0e0;
+  color:#d7e1e1;
 }
 
-.perspective-quote{
-  border-top:1px solid rgba(255,255,255,.18);
+.perspective .quote{
   margin-top:30px;
   padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.2);
   font-family:Georgia,serif;
   font-size:25px;
   line-height:1.5;
-  color:#fff !important;
+  color:white;
 }
 
-/* FIVE QUESTIONS */
+/* QUESTIONS */
 
 .questions{
-  margin-top:35px;
+  margin-top:30px;
 }
 
-.question-item{
-  display:grid;
-  grid-template-columns:55px 1fr;
-  gap:20px;
-  padding:24px 0;
-  border-bottom:1px solid #d4d9d6;
+.question{
+  display:flex;
+  gap:22px;
+  padding:22px 0;
+  border-bottom:1px solid #d1d8d5;
 }
 
-.question-item:last-child{
-  border-bottom:none;
-}
-
-.q-number{
+.question-number{
+  min-width:35px;
   font-family:Georgia,serif;
-  font-size:27px;
-  color:#4b958b;
+  font-size:25px;
+  color:#4d958c;
 }
 
-.question-item h3{
-  font-family:Georgia,serif;
+.question h3{
   font-size:21px;
-  color:#18323a;
-  margin-bottom:5px;
+  margin:0 0 6px;
 }
 
-.question-item p{
-  font-size:15px;
+.question p{
+  font-size:16px;
   margin:0;
 }
 
-/* CLOSING */
+/* END */
 
-.closing{
-  margin-top:60px;
+.ending{
+  margin-top:65px;
   padding-top:45px;
-  border-top:1px solid #ccd3d1;
+  border-top:1px solid #c7cfcd;
 }
 
-.closing p{
+.ending p{
   font-family:Georgia,serif;
-  font-size:23px;
+  font-size:25px;
   line-height:1.55;
-  color:#21383e;
+  color:#20383e;
+}
+
+.signature{
+  margin-top:35px;
+  font-size:13px;
+  color:#728083;
 }
 
 /* RELATED */
 
 .related{
-  background:#e8e5dc;
-  padding:70px 0;
+  background:#e8e4da;
+  padding:75px 0;
 }
 
 .related h2{
   font-family:Georgia,serif;
-  font-size:34px;
+  font-size:35px;
+  color:#18343b;
   margin-bottom:35px;
 }
 
 .related-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  gap:22px;
 }
 
-.related-card{
+.card{
   background:#fff;
   padding:30px;
-  border-top:4px solid #4fb6aa;
+  border-top:3px solid #56aaa0;
 }
 
-.related-card small{
+.card small{
   text-transform:uppercase;
-  letter-spacing:1px;
+  letter-spacing:1.2px;
   font-size:10px;
-  color:#678077;
+  color:#658079;
 }
 
-.related-card h3{
+.card h3{
   font-family:Georgia,serif;
   font-size:22px;
-  line-height:1.3;
-  margin:14px 0;
+  line-height:1.35;
+  color:#19353c;
+  margin:13px 0;
 }
 
-.related-card p{
+.card p{
   font-size:14px;
-  color:#657277;
+  color:#667479;
 }
 
 /* CTA */
 
 .cta{
-  background:#17343b;
-  color:#fff;
+  background:#17353d;
+  color:white;
   text-align:center;
   padding:85px 20px;
 }
@@ -381,28 +389,23 @@ nav{
 .cta p{
   max-width:650px;
   margin:0 auto 30px;
-  color:#d3dfdf;
+  color:#d1dddd;
   font-size:17px;
 }
 
 .button{
   display:inline-block;
-  background:#65bcb1;
-  color:#10252d;
-  padding:14px 24px;
+  background:#63b9ae;
+  color:#10262e;
+  padding:14px 25px;
   font-size:14px;
   font-weight:bold;
-  border-radius:2px;
-}
-
-.button:hover{
-  background:#82cec5;
 }
 
 /* FOOTER */
 
 footer{
-  background:#0d1d23;
+  background:#0c1d23;
   color:#8fa1a5;
   padding:35px 0;
   font-size:13px;
@@ -415,8 +418,8 @@ footer{
 }
 
 .footer-logo{
-  color:#fff;
   font-family:Georgia,serif;
+  color:white;
   font-size:19px;
 }
 
@@ -424,37 +427,44 @@ footer{
 
 @media(max-width:800px){
 
-  .nav-inner{
-    align-items:flex-start;
-  }
-
   .nav-links{
     display:none;
   }
 
   .hero{
-    padding:65px 0 70px;
+    padding:65px 0 75px;
   }
 
   .hero h1{
-    font-size:43px;
+    font-size:45px;
   }
 
-  .article-grid{
-    grid-template-columns:1fr;
-    gap:20px;
+  .article-layout{
+    display:block;
   }
 
   .article-side{
     display:none;
   }
 
-  .question{
+  .article-section{
+    padding:60px 0 75px;
+  }
+
+  .article .opening{
+    font-size:23px;
+  }
+
+  .big-question{
     padding:30px;
   }
 
+  .big-question h2{
+    font-size:29px;
+  }
+
   .perspective{
-    padding:35px 25px;
+    padding:35px 28px;
   }
 
   .related-grid{
@@ -469,8 +479,6 @@ footer{
 </head>
 
 <body>
-
-<!-- NAVIGATION -->
 
 <nav>
   <div class="container nav-inner">
@@ -492,13 +500,11 @@ footer{
 </nav>
 
 
-<!-- HERO -->
-
 <section class="hero">
 
-  <div class="container">
+  <div class="container hero-inner">
 
-    <div class="kicker">
+    <div class="eyebrow">
       Meridian Perspective · Sustainability Strategy
     </div>
 
@@ -507,11 +513,11 @@ footer{
     </h1>
 
     <p class="hero-intro">
-      A polished report can create the impression that sustainability is being managed well. But reporting quality and strategic quality are not the same thing.
+      Sometimes the report looks better than the reality behind it. That is where the interesting questions begin.
     </p>
 
-    <div class="meta">
-      Meridian ESG · Insight
+    <div class="article-meta">
+      Meridian ESG · Perspective
     </div>
 
   </div>
@@ -519,229 +525,299 @@ footer{
 </section>
 
 
-<!-- ARTICLE -->
+<section class="article-section">
 
-<section class="article-wrap">
-
-  <div class="article-grid">
+  <div class="article-layout">
 
     <aside class="article-side">
 
-      <div class="side-label">
-        The Question
+      <div class="side-title">
+        An observation
       </div>
 
-      <div class="side-line"></div>
+      <div class="side-rule"></div>
 
-      <p>
-        Is sustainability changing the business — or simply improving the report?
-      </p>
+      <div class="side-text">
+        The report may tell you what happened. The harder question is what changed.
+      </div>
 
     </aside>
 
 
     <article class="article">
 
-      <p class="lead">
-        Sustainability reporting has become increasingly sophisticated. Reports are longer, more structured and often supported by increasingly detailed data, targets and disclosures.
+      <p class="opening">
+        There is a moment that happens in many organisations.
       </p>
 
       <p>
-        Yet there is an uncomfortable possibility:
-        <strong>a company can become better at reporting sustainability without becoming better at managing it.</strong>
+        The sustainability report is finally finished.
       </p>
 
       <p>
-        That distinction matters.
+        The numbers are there. The targets are there. The photographs are there. The language has been carefully reviewed. The charts look good.
+      </p>
+
+      <p>
+        Everyone can breathe again.
+      </p>
+
+      <p>
+        And then comes the question that is sometimes harder to answer:
       </p>
 
 
-      <div class="question">
+      <div class="big-question">
 
-        <div class="question-label">
-          The better question
-        </div>
+        <small>The question that matters</small>
 
-        <h3>
-          What changed because of the sustainability strategy?
-        </h3>
+        <h2>
+          Did anything actually change?
+        </h2>
+
+      </div>
+
+
+      <p>
+        Not in the report.
+      </p>
+
+      <p>
+        <strong>In the business.</strong>
+      </p>
+
+      <p>
+        Did an investment decision change? Did a supplier conversation change? Did someone in operations do something differently? Did management make a difficult trade-off because of a sustainability issue?
+      </p>
+
+      <p>
+        Sometimes the answer is clearly yes.
+      </p>
+
+      <p>
+        Sometimes it is much less clear.
+      </p>
+
+
+      <h2>
+        The uncomfortable gap between reporting and reality
+      </h2>
+
+      <p>
+        Sustainability reporting has come a long way. That is a good thing.
+      </p>
+
+      <p>
+        Companies have become much better at measuring, disclosing and explaining what they are doing. Expectations from investors, regulators, customers, employees and other stakeholders have also changed.
+      </p>
+
+      <p>
+        But there is a trap here.
+      </p>
+
+      <p>
+        An organisation can become very good at <em>describing</em> sustainability without becoming equally good at <em>managing</em> it.
+      </p>
+
+      <p>
+        The two are connected, but they are not the same.
+      </p>
+
+
+      <div class="pullquote">
+
+        <p>
+          “The report can be finished in a few months. Changing the business can take years.”
+        </p>
 
       </div>
 
 
       <h2>
-        Reporting is not the same as strategy
+        Where things usually become interesting
       </h2>
 
       <p>
-        A sustainability report tells stakeholders what an organisation has identified, committed to, measured or achieved.
+        Look beyond the report and into the decisions that keep the organisation running.
       </p>
 
-      <p>
-        A strategy should do something different.
-      </p>
 
-      <p>
-        It should influence priorities, investment decisions, operational choices, risk management, incentives and, ultimately, the way the organisation creates value.
-      </p>
+      <div class="observation">
 
-      <p>
-        The two should reinforce each other. But they are not interchangeable.
-      </p>
+        <h3>
+          The target is impressive. But who owns it?
+        </h3>
+
+        <p>
+          It is relatively easy to announce a target. It is harder to make sure that somebody in the business is actually responsible for delivering it — with the authority, resources and support to do so.
+        </p>
+
+      </div>
+
+
+      <div class="observation">
+
+        <h3>
+          Sustainability has a seat at the table. But does it have a voice?
+        </h3>
+
+        <p>
+          Some organisations have created committees, appointed sustainability leaders and introduced new reporting structures. All useful. But the real test comes when sustainability meets cost, growth, production or commercial pressure.
+        </p>
+
+      </div>
+
+
+      <div class="observation">
+
+        <h3>
+          There is plenty of activity. But is the difficult issue being addressed?
+        </h3>
+
+        <p>
+          Organisations can accumulate programmes, partnerships, campaigns and initiatives. The list can become impressive. Yet the most important issue may still be sitting quietly in the room.
+        </p>
+
+      </div>
 
 
       <h2>
-        Three signals worth watching
+        This is where strategy matters
       </h2>
 
+      <p>
+        A sustainability strategy should not simply organise everything the company is already doing.
+      </p>
 
-      <div class="signal">
+      <p>
+        It should help the organisation decide what matters, what needs to change and where difficult choices may have to be made.
+      </p>
 
-        <div class="signal-number">01</div>
+      <p>
+        That can be uncomfortable.
+      </p>
 
-        <h3>
-          Targets without delivery
-        </h3>
+      <p>
+        Because once sustainability starts influencing real decisions, there are usually trade-offs.
+      </p>
 
-        <p>
-          Ambitious sustainability targets can look impressive. But the real test is whether capital, people, accountability and operational decisions have been aligned behind them.
-        </p>
+      <p>
+        A supplier may no longer be the easiest choice. A project may need to be redesigned. A growth opportunity may carry a risk that cannot simply be put into a footnote. A target may require money that was originally intended for something else.
+      </p>
 
-      </div>
+      <p>
+        That is when sustainability stops being a communications exercise and starts becoming management.
+      </p>
 
-
-      <div class="signal">
-
-        <div class="signal-number">02</div>
-
-        <h3>
-          Reporting without integration
-        </h3>
-
-        <p>
-          Sustainability can remain largely a reporting function while the core business continues to make decisions through a completely different lens.
-        </p>
-
-      </div>
-
-
-      <div class="signal">
-
-        <div class="signal-number">03</div>
-
-        <h3>
-          Activity without impact
-        </h3>
-
-        <p>
-          A long list of initiatives does not necessarily mean that the organisation is addressing its most material challenges. Activity can be visible while strategic change remains limited.
-        </p>
-
-      </div>
-
-
-      <!-- MERIDIAN PERSPECTIVE -->
 
       <div class="perspective">
 
-        <div class="kicker">
+        <div class="eyebrow">
           Meridian Perspective
         </div>
 
         <h2>
-          Look beyond the report.
+          Don't judge the strategy by the report alone.
         </h2>
 
         <p>
-          The quality of a sustainability report should not be judged only by how much information it contains.
+          A good report can tell us what an organisation says, measures and discloses.
         </p>
 
         <p>
-          The more important question is whether the thinking behind the report has changed the way the organisation operates.
+          To understand the strategy, look at what happens when there is pressure.
         </p>
 
-        <p class="perspective-quote">
-          “Good reporting tells stakeholders what an organisation says it is doing. Good strategy changes what the organisation actually does.”
+        <p>
+          What gets funded? What gets stopped? Who gets held accountable? Which risks reach the board? Which decisions become different?
+        </p>
+
+        <p class="quote">
+          “The real test of a sustainability strategy is not what the organisation says when things are going well. It is what changes when the choices become difficult.”
         </p>
 
       </div>
 
 
       <h2>
-        Five questions management should ask
+        Five questions worth asking
       </h2>
 
       <p>
-        Before adding another target, initiative or disclosure, management may want to step back and ask:
+        Perhaps the next time a sustainability report lands on the table, the conversation should move beyond whether the report is good.
+      </p>
+
+      <p>
+        Ask instead:
       </p>
 
 
       <div class="questions">
 
-        <div class="question-item">
+        <div class="question">
 
-          <div class="q-number">1</div>
+          <div class="question-number">1</div>
 
           <div>
-            <h3>What are the issues that could materially affect the business?</h3>
+            <h3>What has actually changed?</h3>
             <p>
-              Not every sustainability issue deserves the same strategic attention.
+              Look for changes in decisions, behaviour and investment — not just new initiatives.
             </p>
           </div>
 
         </div>
 
 
-        <div class="question-item">
+        <div class="question">
 
-          <div class="q-number">2</div>
+          <div class="question-number">2</div>
 
           <div>
-            <h3>Where are sustainability issues already affecting business decisions?</h3>
+            <h3>Who owns the outcome?</h3>
             <p>
-              Look for evidence in investment, procurement, operations, products and risk.
+              If everything belongs to the sustainability team, perhaps it does not yet belong to the business.
             </p>
           </div>
 
         </div>
 
 
-        <div class="question-item">
+        <div class="question">
 
-          <div class="q-number">3</div>
+          <div class="question-number">3</div>
 
           <div>
-            <h3>Who actually owns the outcomes?</h3>
+            <h3>What happens when commercial pressure arrives?</h3>
             <p>
-              Responsibility becomes meaningful when accountability sits beyond the sustainability team.
+              This is often where the real priorities become visible.
             </p>
           </div>
 
         </div>
 
 
-        <div class="question-item">
+        <div class="question">
 
-          <div class="q-number">4</div>
+          <div class="question-number">4</div>
 
           <div>
-            <h3>What has changed in the business because of the strategy?</h3>
+            <h3>Are the hardest issues being discussed?</h3>
             <p>
-              Look for decisions, behaviours and investments — not simply activities.
+              A strategy should not only celebrate progress. It should make difficult conversations possible.
             </p>
           </div>
 
         </div>
 
 
-        <div class="question-item">
+        <div class="question">
 
-          <div class="q-number">5</div>
+          <div class="question-number">5</div>
 
           <div>
-            <h3>Would the strategy still make sense if there were no report to publish?</h3>
+            <h3>Would the strategy still matter if nobody had to publish a report?</h3>
             <p>
-              This is perhaps the most revealing question of all.
+              That question can reveal more than another page of disclosure.
             </p>
           </div>
 
@@ -750,16 +826,23 @@ footer{
       </div>
 
 
-      <div class="closing">
+      <div class="ending">
 
         <p>
-          The strongest sustainability strategies do not begin with the question, “What should we report?”
+          A sustainability report can be polished, comprehensive and credible — and still leave the most important question unanswered.
         </p>
 
         <p>
-          They begin with a more difficult question:
-          <strong>“What needs to change?”</strong>
+          <strong>What changed because of it?</strong>
         </p>
+
+        <p>
+          That is where reporting ends and strategy begins.
+        </p>
+
+        <div class="signature">
+          Meridian ESG · Sustainability Intelligence for Southeast Asia
+        </div>
 
       </div>
 
@@ -770,64 +853,56 @@ footer{
 </section>
 
 
-<!-- RELATED -->
-
 <section class="related">
 
   <div class="container">
 
     <h2>
-      Continue exploring
+      More from Meridian ESG
     </h2>
 
     <div class="related-grid">
 
-      <a href="csr-sustainability-esg.html" class="related-card">
+      <a href="csr-sustainability-esg.html" class="card">
 
-        <small>
-          Knowledge Guide
-        </small>
+        <small>Knowledge Guide</small>
 
         <h3>
           CSR, Sustainability & ESG: What's the Difference?
         </h3>
 
         <p>
-          Understanding how three frequently confused concepts evolved — and why the distinction still matters.
+          Three terms. Different origins. And a distinction that still matters.
         </p>
 
       </a>
 
 
-      <a href="knowledge.html" class="related-card">
+      <a href="intelligence.html" class="card">
 
-        <small>
-          Knowledge
-        </small>
-
-        <h3>
-          Understanding Sustainability Strategy
-        </h3>
-
-        <p>
-          Explore the foundations behind stronger sustainability thinking.
-        </p>
-
-      </a>
-
-
-      <a href="intelligence.html" class="related-card">
-
-        <small>
-          Intelligence
-        </small>
+        <small>Intelligence</small>
 
         <h3>
           What is changing — and why does it matter?
         </h3>
 
         <p>
-          Follow the signals connecting regulation, markets, business and stakeholders.
+          Signals connecting regulation, standards, markets, business and stakeholders.
+        </p>
+
+      </a>
+
+
+      <a href="knowledge.html" class="card">
+
+        <small>Knowledge</small>
+
+        <h3>
+          Making sustainability easier to understand.
+        </h3>
+
+        <p>
+          Explore the foundations behind sustainability, ESG and responsible business.
         </p>
 
       </a>
@@ -839,8 +914,6 @@ footer{
 </section>
 
 
-<!-- CTA -->
-
 <section class="cta">
 
   <h2>
@@ -848,7 +921,7 @@ footer{
   </h2>
 
   <p>
-    Meridian ESG explores the questions behind sustainability, ESG and responsible business — with a particular lens on Southeast Asia.
+    Meridian ESG looks beyond the language of sustainability to explore what it means for organisations, markets and people across Southeast Asia.
   </p>
 
   <a href="knowledge.html" class="button">
@@ -857,8 +930,6 @@ footer{
 
 </section>
 
-
-<!-- FOOTER -->
 
 <footer>
 
