@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Insights | Meridian ESG</title>
+
+<meta name="description" content="Meridian ESG Insights — perspectives on sustainability, ESG, responsible business and Southeast Asia.">
+
+<style>
+
+:root{
+    --navy:#08263a;
+    --navy2:#103b52;
+    --teal:#00aeb3;
+    --teal-light:#65d8d8;
+    --ivory:#f7f5ef;
+    --cream:#ece8dc;
+    --white:#ffffff;
+    --text:#193247;
+    --muted:#65747d;
+    --line:#d9dfdd;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:var(--text);
+    background:var(--ivory);
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* HEADER */
+
+header{
+    background:var(--navy);
+    color:white;
+    padding:16px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.logo-mark{
+    width:38px;
+    height:38px;
+    border:2px solid var(--teal);
+    border-radius:50%;
+    position:relative;
+}
+
+.logo-mark:after{
+    content:"";
+    position:absolute;
+    width:14px;
+    height:3px;
+    background:var(--teal);
+    transform:rotate(-45deg);
+    left:10px;
+    top:16px;
+}
+
+.logo-text{
+    font-family:Georgia,serif;
+    font-size:20px;
+    letter-spacing:4px;
+}
+
+.logo-sub{
+    display:block;
+    color:#b8d0d4;
+    font-size:8px;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:27px;
+    font-size:13px;
+}
+
+nav a{
+    color:#d5e3e6;
+    padding-bottom:5px;
+}
+
+nav a:hover,
+nav a.active{
+    color:white;
+    border-bottom:2px solid var(--teal);
+}
+
+/* HERO */
+
+.hero{
+    background:var(--navy);
+    color:white;
+    padding:105px 7% 95px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero:after{
+    content:"INSIGHT";
+    position:absolute;
+    right:-20px;
+    bottom:-55px;
+    font-family:Georgia,serif;
+    font-size:180px;
+    color:rgba(255,255,255,.035);
+}
+
+.hero-inner{
+    max-width:1180px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+.eyebrow{
+    color:var(--teal-light);
+    text-transform:uppercase;
+    letter-spacing:2.5px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:clamp(48px,7vw,82px);
+    line-height:1.02;
+    max-width:850px;
+}
+
+.hero h1 span{
+    color:var(--teal-light);
+}
+
+.hero p{
+    max-width:700px;
+    font-family:Georgia,serif;
+    font-size:21px;
+    color:#d3e2e5;
+    margin-top:27px;
+}
+
+/* FEATURED */
+
+.featured{
+    background:white;
+    padding:90px 6%;
+}
+
+.featured-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.featured-label{
+    color:var(--teal-dark);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:65px;
+    align-items:center;
+}
+
+.featured h2{
+    font-family:Georgia,serif;
+    font-size:48px;
+    font-weight:normal;
+    line-height:1.12;
+    margin-bottom:22px;
+}
+
+.featured p{
+    color:var(--muted);
+    font-size:16px;
+}
+
+.featured-question{
+    margin-top:28px;
+    border-left:3px solid var(--teal);
+    padding-left:20px;
+    font-family:Georgia,serif;
+    font-size:22px;
+    color:var(--navy);
+}
+
+.featured-visual{
+    min-height:390px;
+    background:
+        radial-gradient(circle at 25% 30%,rgba(0,174,179,.5),transparent 13%),
+        radial-gradient(circle at 72% 65%,rgba(0,174,179,.35),transparent 20%),
+        linear-gradient(145deg,#08263a,#145b69);
+    position:relative;
+    overflow:hidden;
+}
+
+.featured-visual:before{
+    content:"STRATEGY";
+    position:absolute;
+    font-family:Georgia,serif;
+    font-size:62px;
+    color:rgba(255,255,255,.15);
+    transform:rotate(-20deg);
+    left:-10px;
+    top:125px;
+}
+
+.featured-visual:after{
+    content:"REPORTING ≠ STRATEGY";
+    position:absolute;
+    bottom:28px;
+    right:25px;
+    color:var(--teal-light);
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+/* ARTICLES */
+
+.articles{
+    padding:90px 6%;
+    background:var(--ivory);
+}
+
+.articles-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.heading{
+    max-width:700px;
+    margin-bottom:55px;
+}
+
+.heading h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:44px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.heading p{
+    color:var(--muted);
+}
+
+/* ARTICLE GRID */
+
+.article-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.article{
+    background:white;
+    border:1px solid var(--line);
+    transition:.25s ease;
+}
+
+.article:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(8,38,58,.08);
+}
+
+.article-visual{
+    height:210px;
+    background:linear-gradient(145deg,#0a3349,#15727a);
+    position:relative;
+    overflow:hidden;
+}
+
+.article:nth-child(2) .article-visual{
+    background:linear-gradient(145deg,#dce8e5,#8dbfbc);
+}
+
+.article:nth-child(3) .article-visual{
+    background:linear-gradient(145deg,#173d52,#8a9d9d);
+}
+
+.article-visual:before{
+    content:"";
+    position:absolute;
+    width:190px;
+    height:190px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:50%;
+    left:20px;
+    top:15px;
+}
+
+.article-visual:after{
+    content:"";
+    position:absolute;
+    width:110px;
+    height:110px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+    right:25px;
+    bottom:20px;
+}
+
+.article-word{
+    position:absolute;
+    bottom:20px;
+    left:22px;
+    font-family:Georgia,serif;
+    font-size:31px;
+    color:rgba(255,255,255,.85);
+    z-index:2;
+}
+
+.article:nth-child(2) .article-word{
+    color:rgba(8,38,58,.7);
+}
+
+.article-body{
+    padding:28px;
+}
+
+.article-meta{
+    color:var(--teal-dark);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.article h3{
+    font-family:Georgia,serif;
+    font-size:27px;
+    font-weight:normal;
+    line-height:1.2;
+    margin:13px 0;
+}
+
+.article p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.read{
+    display:inline-block;
+    margin-top:20px;
+    color:var(--navy);
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.read:hover{
+    color:var(--teal-dark);
+}
+
+/* MERIDIAN PERSPECTIVE */
+
+.perspective{
+    background:var(--cream);
+    padding:90px 6%;
+}
+
+.perspective-inner{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.perspective h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.perspective p{
+    max-width:730px;
+    margin:auto;
+    color:var(--muted);
+    font-size:17px;
+}
+
+.perspective-quote{
+    margin-top:35px;
+    font-family:Georgia,serif;
+    font-size:27px;
+    color:var(--navy);
+}
+
+/* CATEGORIES */
+
+.categories{
+    background:white;
+    padding:70px 6%;
+}
+
+.categories-inner{
+    max-width:1180px;
+    margin:auto;
+}
+
+.category-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.category{
+    padding:13px 20px;
+    border:1px solid var(--line);
+    background:var(--ivory);
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.category:hover{
+    background:var(--navy);
+    color:white;
+}
+
+/* CTA */
+
+.cta{
+    background:var(--teal);
+    color:white;
+    text-align:center;
+    padding:75px 6%;
+}
+
+.cta h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:43px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:650px;
+    margin:auto auto 28px;
+    color:#e5ffff;
+}
+
+.button{
+    display:inline-block;
+    background:var(--navy);
+    color:white;
+    padding:14px 25px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:12px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061e2e;
+    color:#b8ccd0;
+    padding:45px 6%;
+}
+
+.footer-inner{
+    max-width:1180px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+footer h3{
+    color:white;
+    font-family:Georgia,serif;
+    font-weight:normal;
+    margin-bottom:7px;
+}
+
+footer p{
+    font-size:12px;
+}
+
+.footer-links{
+    display:flex;
+    gap:20px;
+    font-size:12px;
+}
+
+.footer-links a:hover{
+    color:var(--teal-light);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    nav{
+        gap:12px;
+        font-size:11px;
+    }
+
+    .featured-grid{
+        grid-template-columns:1fr;
+    }
+
+    .article-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    header{
+        padding:14px 5%;
+    }
+
+    .logo-text{
+        font-size:16px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        padding:75px 6%;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .featured,
+    .articles,
+    .perspective{
+        padding:65px 6%;
+    }
+
+    .featured h2,
+    .heading h2,
+    .perspective h2,
+    .cta h2{
+        font-size:34px;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+
+<div class="logo-mark"></div>
+
+<div>
+<div class="logo-text">MERIDIAN ESG</div>
+<span class="logo-sub">SUSTAINABILITY INTELLIGENCE</span>
+</div>
+
+</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="intelligence.html">Intelligence</a>
+<a href="knowledge.html">Knowledge</a>
+<a href="insights.html" class="active">Insights</a>
+<a href="navigator.html">Navigator</a>
+<a href="about.html">About</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="eyebrow">Meridian ESG · Insights</div>
+
+<h1>
+Ideas worth
+<span>thinking about.</span>
+</h1>
+
+<p>
+Short perspectives on sustainability, ESG and responsible business — focused less on what everyone is saying, and more on what may be getting missed.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FEATURED -->
+
+<section class="featured">
+
+<div class="featured-inner">
+
+<div class="featured-label">Featured Perspective</div>
+
+<div class="featured-grid">
+
+<div>
+
+<h2>
+A good sustainability report can still hide a bad sustainability strategy.
+</h2>
+
+<p>
+Reporting quality and sustainability performance are not the same thing. An organisation can produce an impressive report while the underlying strategy remains fragmented, poorly governed or disconnected from business decisions.
+</p>
+
+<div class="featured-question">
+The better question is not: <em>“How good is the report?”</em>
+<br><br>
+It is: <em>“What changed because of it?”</em>
+</div>
+
+</div>
+
+<div class="featured-visual"></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ARTICLES -->
+
+<section class="articles">
+
+<div class="articles-inner">
+
+<div class="heading">
+
+<div class="eyebrow" style="color:var(--teal-dark);">
+Meridian Perspectives
+</div>
+
+<h2>
+The conversation behind the conversation.
+</h2>
+
+<p>
+Meridian Insights explores the questions that often sit underneath sustainability headlines, frameworks and corporate commitments.
+</p>
+
+</div>
+
+
+<div class="article-grid">
+
+
+<article class="article">
+
+<div class="article-visual">
+<div class="article-word">REGULATION</div>
+</div>
+
+<div class="article-body">
+
+<div class="article-meta">
+Perspective · Indonesia
+</div>
+
+<h3>
+Why sustainability regulation is changing the conversation.
+</h3>
+
+<p>
+The shift from voluntary reporting toward more structured expectations is changing more than disclosure. It may change how companies think about governance, data and accountability.
+</p>
+
+<a href="#" class="read">
+Read perspective →
+</a>
+
+</div>
+
+</article>
+
+
+<article class="article">
+
+<div class="article-visual">
+<div class="article-word">CSR → ESG</div>
+</div>
+
+<div class="article-body">
+
+<div class="article-meta">
+Perspective · Foundation
+</div>
+
+<h3>
+The labels changed. Did the business?
+</h3>
+
+<p>
+CSR, sustainability and ESG have different histories and purposes. But changing the label does not automatically change the way an organisation operates.
+</p>
+
+<a href="csr-sustainability-esg.html" class="read">
+Read guide →
+</a>
+
+</div>
+
+</article>
+
+
+<article class="article">
+
+<div class="article-visual">
+<div class="article-word">STRATEGY</div>
+</div>
+
+<div class="article-body">
+
+<div class="article-meta">
+Perspective · Management
+</div>
+
+<h3>
+Five questions every sustainability strategy should answer.
+</h3>
+
+<p>
+Ambitious targets are easy to announce. The difficult part is connecting those targets to decisions, accountability, resources and delivery.
+</p>
+
+<a href="#" class="read">
+Read perspective →
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PERSPECTIVE -->
+
+<section class="perspective">
+
+<div class="perspective-inner">
+
+<div class="eyebrow" style="color:var(--teal-dark);">
+The Meridian Approach
+</div>
+
+<h2>
+Don't give people more information.
+Give them a better way to see it.
+</h2>
+
+<p>
+The purpose of Meridian Insights is not to reproduce everything already available online. It is to connect developments, experience and context — and identify what deserves attention.
+</p>
+
+<div class="perspective-quote">
+“Don't compete with Google by providing information. Compete by providing interpretation.”
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories">
+
+<div class="categories-inner">
+
+<div class="eyebrow" style="color:var(--teal-dark);">
+Explore by theme
+</div>
+
+<div class="category-list">
+
+<div class="category">Sustainability Strategy</div>
+<div class="category">ESG</div>
+<div class="category">Reporting</div>
+<div class="category">Governance</div>
+<div class="category">Stakeholders</div>
+<div class="category">CSR</div>
+<div class="category">Mining & Resources</div>
+<div class="category">Southeast Asia</div>
+<div class="category">Responsible Business</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>
+Something worth exploring?
+</h2>
+
+<p>
+Meridian Insights will continue to examine the issues behind the headlines — with a particular focus on Southeast Asia and business reality.
+</p>
+
+<a href="knowledge.html" class="button">
+Explore Knowledge →
+</a>
+
+</section>
+
+
+<footer>
+
+<div class="footer-inner">
+
+<div>
+<h3>MERIDIAN ESG</h3>
+<p>Sustainability Intelligence for Southeast Asia.</p>
+</div>
+
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="intelligence.html">Intelligence</a>
+<a href="knowledge.html">Knowledge</a>
+<a href="navigator.html">Navigator</a>
+<a href="about.html">About</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
