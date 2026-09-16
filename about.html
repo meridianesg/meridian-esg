@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Meridian ESG | Sustainability Intelligence for Southeast Asia</title>
+
+<meta name="description" content="Why Meridian ESG exists, the experience behind it, and its approach to sustainability intelligence for Southeast Asia.">
+
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f1e8;
+  color:#26383d;
+  line-height:1.7;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+
+/* NAVIGATION */
+
+nav{
+  background:#10262e;
+  color:#fff;
+  padding:20px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#61b9ae;
+}
+
+.nav-links{
+  display:flex;
+  gap:24px;
+  font-size:14px;
+}
+
+.nav-links a{
+  color:#d8e2e2;
+}
+
+.nav-links a:hover{
+  color:#70c8bd;
+}
+
+
+/* HERO */
+
+.hero{
+  background:#10262e;
+  color:#fff;
+  padding:95px 0 105px;
+}
+
+.hero-inner{
+  max-width:920px;
+}
+
+.eyebrow{
+  color:#70c8bd;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:11px;
+  font-weight:bold;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(46px,6vw,74px);
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:30px;
+}
+
+.hero p{
+  max-width:760px;
+  font-size:21px;
+  line-height:1.65;
+  color:#d5e0e0;
+}
+
+
+/* WHY */
+
+.why{
+  padding:85px 0;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:1fr 1.3fr;
+  gap:80px;
+  align-items:start;
+}
+
+.section-title{
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:1.2;
+  color:#17353b;
+}
+
+.why-copy p{
+  font-size:18px;
+  color:#46565a;
+  margin-bottom:24px;
+}
+
+.highlight{
+  margin-top:35px;
+  padding:30px;
+  background:#e2ece9;
+  border-left:4px solid #59aaa0;
+}
+
+.highlight p{
+  font-family:Georgia,serif;
+  font-size:24px;
+  line-height:1.5;
+  color:#19373d;
+  margin:0;
+}
+
+
+/* EXPERIENCE */
+
+.experience{
+  background:#e8e4da;
+  padding:90px 0;
+}
+
+.experience-header{
+  max-width:760px;
+  margin-bottom:50px;
+}
+
+.experience-header h2{
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:1.2;
+  color:#17353b;
+  margin-bottom:18px;
+}
+
+.experience-header p{
+  font-size:17px;
+  color:#5b696d;
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.experience-card{
+  background:#fff;
+  padding:32px;
+  border-top:3px solid #59aaa0;
+}
+
+.experience-card h3{
+  font-family:Georgia,serif;
+  font-size:24px;
+  color:#18353b;
+  margin-bottom:10px;
+}
+
+.experience-card p{
+  font-size:15px;
+  color:#647276;
+}
+
+
+/* HUMAN SIDE */
+
+.human{
+  padding:95px 0;
+}
+
+.human-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:stretch;
+}
+
+.photo-placeholder{
+  min-height:460px;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,rgba(23,53,59,.15),rgba(89,170,160,.22)),
+    #d9ddd7;
+  display:flex;
+  align-items:flex-end;
+}
+
+.photo-placeholder::after{
+  content:"FIELD · PEOPLE · PLACE";
+  position:absolute;
+  bottom:25px;
+  left:25px;
+  font-size:10px;
+  letter-spacing:2px;
+  color:#52666a;
+}
+
+.human-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.human-copy .eyebrow{
+  color:#4e8e86;
+}
+
+.human-copy h2{
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:1.2;
+  color:#17353b;
+  margin-bottom:22px;
+}
+
+.human-copy p{
+  font-size:18px;
+  color:#4b5b5f;
+  margin-bottom:23px;
+}
+
+.human-note{
+  margin-top:12px;
+  padding:25px 0 0;
+  border-top:1px solid #c8cfcd;
+  font-family:Georgia,serif;
+  font-size:21px;
+  color:#274047;
+}
+
+
+/* CREDIBILITY */
+
+.credibility{
+  background:#10262e;
+  color:#fff;
+  padding:90px 0;
+}
+
+.credibility-grid{
+  display:grid;
+  grid-template-columns:1fr 1.3fr;
+  gap:75px;
+}
+
+.credibility h2{
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.credibility-intro{
+  color:#cbd9d9;
+  font-size:17px;
+}
+
+.credibility-list{
+  border-top:1px solid rgba(255,255,255,.2);
+}
+
+.credibility-item{
+  padding:24px 0;
+  border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.credibility-item h3{
+  font-family:Georgia,serif;
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.credibility-item p{
+  color:#b9c9ca;
+  font-size:14px;
+}
+
+
+/* PRINCIPLE */
+
+.principle{
+  padding:95px 0;
+  text-align:center;
+}
+
+.principle-inner{
+  max-width:850px;
+  margin:auto;
+}
+
+.principle .eyebrow{
+  color:#4e8e86;
+}
+
+.principle h2{
+  font-family:Georgia,serif;
+  font-size:clamp(35px,5vw,55px);
+  line-height:1.2;
+  color:#17353b;
+  margin-bottom:25px;
+}
+
+.principle p{
+  font-size:18px;
+  color:#526267;
+  max-width:700px;
+  margin:0 auto 25px;
+}
+
+.principle-quote{
+  font-family:Georgia,serif;
+  font-size:28px;
+  line-height:1.45;
+  color:#1d3a40;
+  margin-top:40px;
+}
+
+
+/* REGIONAL */
+
+.regional{
+  background:#e2ece9;
+  padding:85px 0;
+}
+
+.regional-inner{
+  max-width:900px;
+}
+
+.regional h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+  color:#17353b;
+  margin-bottom:20px;
+}
+
+.regional p{
+  font-size:18px;
+  color:#4e5e62;
+  margin-bottom:22px;
+}
+
+.regional-emphasis{
+  font-family:Georgia,serif;
+  font-size:24px;
+  color:#1c3b41;
+  margin-top:30px;
+}
+
+
+/* CTA */
+
+.cta{
+  background:#17353d;
+  color:#fff;
+  text-align:center;
+  padding:90px 20px;
+}
+
+.cta h2{
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+.cta p{
+  max-width:670px;
+  margin:0 auto 32px;
+  color:#d2dddd;
+  font-size:17px;
+}
+
+.button{
+  display:inline-block;
+  background:#63b9ae;
+  color:#10262e;
+  padding:14px 25px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+
+/* FOOTER */
+
+footer{
+  background:#0c1d23;
+  color:#8fa1a5;
+  padding:35px 0;
+  font-size:13px;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.footer-logo{
+  font-family:Georgia,serif;
+  color:#fff;
+  font-size:19px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero{
+    padding:65px 0 75px;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .why-grid,
+  .human-grid,
+  .credibility-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .experience-grid{
+    grid-template-columns:1fr;
+  }
+
+  .photo-placeholder{
+    min-height:330px;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+  <div class="container nav-inner">
+
+    <a href="index.html" class="logo">
+      Meridian <span>ESG</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="intelligence.html">Intelligence</a>
+      <a href="knowledge.html">Knowledge</a>
+      <a href="insights.html">Insights</a>
+      <a href="navigator.html">Navigator</a>
+      <a href="about.html">About</a>
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-inner">
+
+    <div class="eyebrow">
+      About Meridian ESG
+    </div>
+
+    <h1>
+      Built from experience. Designed for what comes next.
+    </h1>
+
+    <p>
+      Sustainability information is everywhere. What is harder to find is useful interpretation — understanding what matters, why it matters, and what it means in the real world.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- WHY MERIDIAN -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="why-grid">
+
+      <div>
+
+        <div class="eyebrow" style="color:#4e8e86;">
+          Why Meridian exists
+        </div>
+
+        <h2 class="section-title">
+          Information is no longer the scarce resource.
+        </h2>
+
+      </div>
+
+
+      <div class="why-copy">
+
+        <p>
+          There is no shortage of sustainability information today.
+        </p>
+
+        <p>
+          Regulations are being published. Standards are evolving. Companies are producing reports. Investors are asking questions. Consultants are producing frameworks. And the internet is full of explanations.
+        </p>
+
+        <p>
+          Yet finding information is often easier than understanding what to do with it.
+        </p>
+
+        <p>
+          Meridian ESG was created around that gap.
+        </p>
+
+        <div class="highlight">
+
+          <p>
+            The value is not simply knowing what changed. It is understanding why the change matters.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+
+  <div class="container">
+
+    <div class="experience-header">
+
+      <div class="eyebrow" style="color:#4e8e86;">
+        What sits behind Meridian
+      </div>
+
+      <h2>
+        More than one perspective.
+      </h2>
+
+      <p>
+        Meridian brings together experience from different sides of the sustainability conversation.
+      </p>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+
+      <div class="experience-card">
+
+        <h3>
+          Business
+        </h3>
+
+        <p>
+          Corporate affairs, government relations, management, strategy and the practical pressures that shape business decisions.
+        </p>
+
+      </div>
+
+
+      <div class="experience-card">
+
+        <h3>
+          International organisations
+        </h3>
+
+        <p>
+          Development programmes, partnerships, international institutions and the challenge of turning ideas into outcomes.
+        </p>
+
+      </div>
+
+
+      <div class="experience-card">
+
+        <h3>
+          Communities & stakeholders
+        </h3>
+
+        <p>
+          Engagement, community development, relationships and the reality that different groups can see the same issue very differently.
+        </p>
+
+      </div>
+
+
+      <div class="experience-card">
+
+        <h3>
+          Sustainability
+        </h3>
+
+        <p>
+          CSR, sustainability reporting, GRI, ESG, governance and the evolution of how organisations understand responsibility.
+        </p>
+
+      </div>
+
+
+      <div class="experience-card">
+
+        <h3>
+          Mining & resources
+        </h3>
+
+        <p>
+          Working around complex projects where environmental, social, commercial and government interests often meet.
+        </p>
+
+      </div>
+
+
+      <div class="experience-card">
+
+        <h3>
+          Southeast Asia
+        </h3>
+
+        <p>
+          A regional perspective shaped by the realities of working across Indonesia and the wider Southeast Asian context.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HUMAN SIDE -->
+
+<section class="human">
+
+  <div class="container">
+
+    <div class="human-grid">
+
+
+      <!-- Replace this visual later with field photograph -->
+
+      <div class="photo-placeholder">
+      </div>
+
+
+      <div class="human-copy">
+
+        <div class="eyebrow">
+          From the field to the boardroom
+        </div>
+
+        <h2>
+          Sustainability looks different when you have seen it up close.
+        </h2>
+
+        <p>
+          Behind Meridian is more than two decades of work across business, international organisations, NGOs, communities and sustainability.
+        </p>
+
+        <p>
+          That experience has shaped a simple belief: the most useful sustainability conversations are rarely the ones with the most terminology.
+        </p>
+
+        <p>
+          They are the conversations where people are willing to ask what is really happening.
+        </p>
+
+        <div class="human-note">
+          “The interesting part is usually underneath the headline.”
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CREDIBILITY -->
+
+<section class="credibility">
+
+  <div class="container">
+
+    <div class="credibility-grid">
+
+
+      <div>
+
+        <div class="eyebrow">
+          The perspective behind the platform
+        </div>
+
+        <h2>
+          Experience changes the questions you ask.
+        </h2>
+
+        <p class="credibility-intro">
+          Meridian is not built around one framework or one professional lens.
+        </p>
+
+      </div>
+
+
+      <div class="credibility-list">
+
+
+        <div class="credibility-item">
+
+          <h3>
+            From CSR to ESG
+          </h3>
+
+          <p>
+            Having followed the evolution of corporate responsibility into today's sustainability and ESG landscape.
+          </p>
+
+        </div>
+
+
+        <div class="credibility-item">
+
+          <h3>
+            From reporting to reality
+          </h3>
+
+          <p>
+            Looking beyond what organisations disclose to the decisions, behaviours and relationships behind the disclosure.
+          </p>
+
+        </div>
+
+
+        <div class="credibility-item">
+
+          <h3>
+            From headquarters to communities
+          </h3>
+
+          <p>
+            Recognising that corporate decisions can look very different from the perspective of the people affected by them.
+          </p>
+
+        </div>
+
+
+        <div class="credibility-item">
+
+          <h3>
+            From global standards to local context
+          </h3>
+
+          <p>
+            Connecting international developments with the institutional, commercial and social realities of Southeast Asia.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRINCIPLE -->
+
+<section class="principle">
+
+  <div class="container principle-inner">
+
+    <div class="eyebrow">
+      The Meridian principle
+    </div>
+
+    <h2>
+      Don't compete with Google by providing information.
+    </h2>
+
+    <p>
+      Compete by helping people understand what the information means.
+    </p>
+
+    <div class="principle-quote">
+      “Information tells you what happened.<br>
+      Intelligence helps you understand why.”
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REGIONAL -->
+
+<section class="regional">
+
+  <div class="container">
+
+    <div class="regional-inner">
+
+      <div class="eyebrow" style="color:#4e8e86;">
+        Why Southeast Asia
+      </div>
+
+      <h2>
+        Global sustainability conversations don't happen in a vacuum.
+      </h2>
+
+      <p>
+        The frameworks may be global. The standards may be international. The expectations of investors may cross borders.
+      </p>
+
+      <p>
+        But the way sustainability plays out depends on markets, institutions, communities, industries and relationships.
+      </p>
+
+      <p>
+        Southeast Asia deserves more than a translated version of someone else's sustainability conversation.
+      </p>
+
+      <div class="regional-emphasis">
+        Meridian looks at the region through both lenses: global direction and local reality.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <h2>
+    There is always more beneath the headline.
+  </h2>
+
+  <p>
+    Explore the questions, signals and perspectives shaping sustainability and responsible business across Southeast Asia.
+  </p>
+
+  <a href="insights.html" class="button">
+    Explore Meridian Insights
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div class="footer-logo">
+      Meridian ESG
+    </div>
+
+    <div>
+      Sustainability Intelligence for Southeast Asia
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
