@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Indonesia's Sustainability Reporting Is Entering a Different Phase | Meridian ESG</title>
+
+<meta name="description" content="Meridian ESG interpretation of Indonesia's transition toward more financially connected sustainability disclosure.">
+
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f1e8;
+  color:#293b40;
+  line-height:1.7;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1080px,92%);
+  margin:auto;
+}
+
+
+/* NAV */
+
+nav{
+  background:#10262e;
+  color:white;
+  padding:20px 0;
+}
+
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#63b9ae;
+}
+
+.nav-links{
+  display:flex;
+  gap:23px;
+  font-size:14px;
+}
+
+.nav-links a{
+  color:#d6e1e1;
+}
+
+.nav-links a:hover{
+  color:#70c8bd;
+}
+
+
+/* HERO */
+
+.hero{
+  background:#10262e;
+  color:white;
+  padding:85px 0 100px;
+}
+
+.hero-content{
+  max-width:900px;
+}
+
+.eyebrow{
+  color:#70c8bd;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:11px;
+  font-weight:bold;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(43px,6vw,68px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin-bottom:28px;
+}
+
+.hero-intro{
+  font-size:21px;
+  color:#d3dfdf;
+  max-width:780px;
+  line-height:1.6;
+}
+
+
+/* META */
+
+.meta{
+  margin-top:35px;
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  color:#9eb3b5;
+  font-size:13px;
+}
+
+
+/* ARTICLE */
+
+.article{
+  padding:85px 0;
+}
+
+.article-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:75px;
+}
+
+.article-main{
+  max-width:720px;
+}
+
+.article-main p{
+  font-size:18px;
+  color:#46575b;
+  margin-bottom:27px;
+}
+
+.article-main h2{
+  font-family:Georgia,serif;
+  font-size:38px;
+  color:#17353b;
+  line-height:1.2;
+  margin:55px 0 22px;
+}
+
+.lead{
+  font-family:Georgia,serif;
+  font-size:27px !important;
+  line-height:1.5;
+  color:#233f45 !important;
+}
+
+
+/* SIGNAL BOX */
+
+.signal-box{
+  background:#e1ece9;
+  border-left:4px solid #59aaa0;
+  padding:30px;
+  margin:40px 0;
+}
+
+.signal-box .label{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:bold;
+  color:#4e8e86;
+  margin-bottom:10px;
+}
+
+.signal-box h3{
+  font-family:Georgia,serif;
+  font-size:26px;
+  color:#19383e;
+  line-height:1.3;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+  position:relative;
+}
+
+.sidebar-card{
+  background:#fff;
+  padding:30px;
+  margin-bottom:22px;
+  border-top:3px solid #59aaa0;
+}
+
+.sidebar-card h3{
+  font-family:Georgia,serif;
+  font-size:21px;
+  color:#19383e;
+  margin-bottom:13px;
+}
+
+.sidebar-card p{
+  font-size:14px;
+  color:#657477;
+}
+
+
+/* INTERPRETATION */
+
+.interpretation{
+  background:#10262e;
+  color:white;
+  padding:85px 0;
+}
+
+.interpretation-inner{
+  max-width:900px;
+}
+
+.interpretation h2{
+  font-family:Georgia,serif;
+  font-size:43px;
+  line-height:1.2;
+  margin-bottom:30px;
+}
+
+.interpretation p{
+  font-size:18px;
+  color:#cbd9d9;
+  margin-bottom:24px;
+  max-width:780px;
+}
+
+.interpretation .big{
+  font-family:Georgia,serif;
+  font-size:29px;
+  color:white;
+  line-height:1.45;
+  margin:35px 0;
+}
+
+
+/* WATCH */
+
+.watch{
+  padding:85px 0;
+}
+
+.watch h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+  color:#17353b;
+  margin-bottom:35px;
+}
+
+.watch-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.watch-card{
+  background:white;
+  padding:30px;
+}
+
+.watch-card span{
+  display:block;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:#4e8e86;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+.watch-card h3{
+  font-family:Georgia,serif;
+  font-size:23px;
+  line-height:1.3;
+  color:#19383e;
+  margin-bottom:12px;
+}
+
+.watch-card p{
+  font-size:14px;
+  color:#657477;
+}
+
+
+/* MERIDIAN FIVE */
+
+.method{
+  background:#e7e3d9;
+  padding:85px 0;
+}
+
+.method-inner{
+  max-width:900px;
+}
+
+.method h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+  color:#17353b;
+  margin-bottom:20px;
+}
+
+.method-intro{
+  font-size:17px;
+  color:#5b6a6e;
+  margin-bottom:40px;
+}
+
+.questions{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+}
+
+.question{
+  background:#fff;
+  padding:22px 17px;
+}
+
+.question strong{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:23px;
+  color:#19383e;
+  margin-bottom:8px;
+}
+
+.question p{
+  font-size:13px;
+  color:#68777a;
+}
+
+
+/* SOURCES */
+
+.sources{
+  padding:70px 0;
+  background:#f5f1e8;
+}
+
+.sources-inner{
+  max-width:850px;
+}
+
+.sources h2{
+  font-family:Georgia,serif;
+  font-size:34px;
+  color:#17353b;
+  margin-bottom:20px;
+}
+
+.sources p{
+  font-size:14px;
+  color:#687679;
+  margin-bottom:10px;
+}
+
+.sources a{
+  color:#397d75;
+}
+
+
+/* CTA */
+
+.cta{
+  background:#17353d;
+  color:white;
+  text-align:center;
+  padding:85px 20px;
+}
+
+.cta h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+.cta p{
+  max-width:650px;
+  margin:0 auto 30px;
+  color:#cedada;
+}
+
+.button{
+  display:inline-block;
+  background:#63b9ae;
+  color:#10262e;
+  padding:14px 24px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+
+/* FOOTER */
+
+footer{
+  background:#0c1d23;
+  color:#8fa1a5;
+  padding:35px 0;
+  font-size:13px;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.footer-logo{
+  font-family:Georgia,serif;
+  color:white;
+  font-size:19px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero{
+    padding:65px 0 75px;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .article-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .watch-grid{
+    grid-template-columns:1fr;
+  }
+
+  .questions{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<nav>
+<div class="container nav-inner">
+
+<a href="index.html" class="logo">
+Meridian <span>ESG</span>
+</a>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="intelligence.html">Intelligence</a>
+<a href="knowledge.html">Knowledge</a>
+<a href="insights.html">Insights</a>
+<a href="navigator.html">Navigator</a>
+<a href="about.html">About</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="eyebrow">
+Intelligence Signal · Indonesia
+</div>
+
+<h1>
+Indonesia's sustainability reporting is entering a different phase.
+</h1>
+
+<p class="hero-intro">
+The important change is not simply that new disclosure standards are coming. It is that sustainability information is moving closer to the language of financial decision-making.
+</p>
+
+<div class="meta">
+<span>September 2026</span>
+<span>Regulation · Reporting · Markets</span>
+<span>Meridian ESG</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ARTICLE -->
+
+<section class="article">
+
+<div class="container article-grid">
+
+<main class="article-main">
+
+
+<p class="lead">
+For years, sustainability reporting could sit in a relatively separate part of the annual corporate conversation.
+</p>
+
+<p>
+There was the financial report.
+There was the sustainability report.
+There were targets, programmes, policies and commitments.
+</p>
+
+<p>
+That separation is becoming harder to maintain.
+</p>
+
+<div class="signal-box">
+
+<div class="label">
+The signal
+</div>
+
+<h3>
+Indonesia is moving toward sustainability disclosure that is more closely connected to financial reporting and decision-making.
+</h3>
+
+</div>
+
+
+<h2>
+What has changed?
+</h2>
+
+<p>
+Indonesia's sustainability disclosure framework is moving toward the adoption of PSPK 1 and PSPK 2, which are aligned with the international IFRS Sustainability Disclosure Standards.
+</p>
+
+<p>
+PSPK 1 covers general requirements for sustainability-related financial disclosures, while PSPK 2 focuses on climate-related disclosures. Both are scheduled to become effective on 1 January 2027. :contentReference[oaicite:1]{index=1}
+</p>
+
+<p>
+At the same time, OJK has been consulting on revisions to its sustainable-finance regulations for financial-sector entities, issuers and public companies. The proposed changes include stronger requirements around governance, risk management, strategy, metrics and targets, alongside alignment with PSPK 1 and PSPK 2. :contentReference[oaicite:2]{index=2}
+</p>
+
+
+<h2>
+Why this matters
+</h2>
+
+<p>
+The easy interpretation is that companies simply need to prepare for another reporting requirement.
+</p>
+
+<p>
+That may be too narrow.
+</p>
+
+<p>
+The more interesting question is what happens when sustainability information starts being treated less as a separate disclosure exercise and more as information relevant to how the business is understood.
+</p>
+
+<p>
+That can affect who needs to be involved, what information gets collected, how risks are discussed and where sustainability issues enter management conversations.
+</p>
+
+<div class="signal-box">
+
+<div class="label">
+The question behind the regulation
+</div>
+
+<h3>
+Will companies change how they manage sustainability — or simply become better at reporting it?
+</h3>
+
+</div>
+
+
+<h2>
+The transition may be more organisational than technical.
+</h2>
+
+<p>
+It is tempting to think of this as a reporting team's problem.
+</p>
+
+<p>
+But the information required for meaningful sustainability-related financial disclosure rarely lives in one department.
+</p>
+
+<p>
+It can involve finance, risk, operations, strategy, procurement, human resources, legal, investor relations and the people responsible for sustainability.
+</p>
+
+<p>
+That creates a different challenge.
+</p>
+
+<p>
+The question is no longer only whether the company can produce the disclosure.
+It is whether the company has the internal understanding and governance to produce information that actually reflects the business.
+</p>
+
+
+</main>
+
+
+<aside class="sidebar">
+
+<div class="sidebar-card">
+
+<h3>
+What to know
+</h3>
+
+<p>
+PSPK 1 and PSPK 2 were approved by IAI in July 2025 and are scheduled to take effect from 1 January 2027.
+</p>
+
+</div>
+
+
+<div class="sidebar-card">
+
+<h3>
+What is happening now
+</h3>
+
+<p>
+OJK has been developing revisions to its sustainable-finance framework, including proposed changes to reporting and disclosure requirements.
+</p>
+
+</div>
+
+
+<div class="sidebar-card">
+
+<h3>
+What to watch
+</h3>
+
+<p>
+The distance between sustainability reporting, financial reporting, risk management and corporate strategy.
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</section>
+
+
+<!-- INTERPRETATION -->
+
+<section class="interpretation">
+
+<div class="container interpretation-inner">
+
+<div class="eyebrow">
+Meridian Interpretation
+</div>
+
+<h2>
+The real transition may not be in the report.
+</h2>
+
+<p class="big">
+It may be in the room where decisions are made.
+</p>
+
+<p>
+A sustainability report can be produced by a highly capable reporting team without changing the way the wider organisation makes decisions.
+</p>
+
+<p>
+But once sustainability-related financial information becomes more closely connected with governance, strategy, risk and investor decision-making, the boundary between “sustainability” and “the business” becomes much harder to defend.
+</p>
+
+<p>
+That is where this transition becomes interesting.
+</p>
+
+<p>
+The companies that treat the next phase as a disclosure exercise may focus on collecting information and satisfying requirements.
+</p>
+
+<p>
+The companies that treat it as a management issue will have a different conversation: What do these risks mean for our business? Who owns them? What assumptions are we making? What needs to change?
+</p>
+
+<p>
+The difference may not be visible in the report at first.
+It may be visible in the decisions that happen before the report is written.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- WHAT TO WATCH -->
+
+<section class="watch">
+
+<div class="container">
+
+<h2>
+What to watch next
+</h2>
+
+<div class="watch-grid">
+
+
+<div class="watch-card">
+
+<span>01 · Governance</span>
+
+<h3>
+Who owns the information?
+</h3>
+
+<p>
+Watch whether sustainability information remains concentrated in specialist functions or becomes part of wider management and board processes.
+</p>
+
+</div>
+
+
+<div class="watch-card">
+
+<span>02 · Strategy</span>
+
+<h3>
+Does disclosure change decisions?
+</h3>
+
+<p>
+The interesting evidence will be whether material sustainability risks and opportunities influence strategy, capital allocation and business priorities.
+</p>
+
+</div>
+
+
+<div class="watch-card">
+
+<span>03 · Capability</span>
+
+<h3>
+Can the organisation explain the numbers?
+</h3>
+
+<p>
+Reliable disclosure requires more than data collection. It requires people across the organisation to understand what the information means.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MERIDIAN FIVE -->
+
+<section class="method">
+
+<div class="container method-inner">
+
+<h2>
+Read the signal through the Meridian Five.
+</h2>
+
+<p class="method-intro">
+The regulation is one thing. Understanding what it means for an organisation is another.
+</p>
+
+<div class="questions">
+
+<div class="question">
+<strong>01</strong>
+<p>What matters?</p>
+</div>
+
+<div class="question">
+<strong>02</strong>
+<p>Why does it matter?</p>
+</div>
+
+<div class="question">
+<strong>03</strong>
+<p>What is changing?</p>
+</div>
+
+<div class="question">
+<strong>04</strong>
+<p>What should you do?</p>
+</div>
+
+<div class="question">
+<strong>05</strong>
+<p>What are others missing?</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SOURCES -->
+
+<section class="sources">
+
+<div class="container sources-inner">
+
+<h2>
+Sources & further reading
+</h2>
+
+<p>
+Otoritas Jasa Keuangan — RPOJK Sustainable Finance consultation, February 2026.
+</p>
+
+<p>
+Otoritas Jasa Keuangan — consultation on changes to POJK 51 and alignment with PSPK 1 and PSPK 2.
+</p>
+
+<p>
+Ikatan Akuntan Indonesia — PSPK 1 and PSPK 2, effective 1 January 2027.
+</p>
+
+<p>
+Ikatan Akuntan Indonesia — 2026 updates on proposed amendments and revisions to PSPK 1 and PSPK 2.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>
+The regulation is only the beginning.
+</h2>
+
+<p>
+Understanding what it means for strategy, governance and business decisions is where the harder questions begin.
+</p>
+
+<a href="navigator.html" class="button">
+Explore the Meridian Navigator
+</a>
+
+</section>
+
+
+<footer>
+
+<div class="container footer-inner">
+
+<div class="footer-logo">
+Meridian ESG
+</div>
+
+<div>
+Sustainability Intelligence for Southeast Asia
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
