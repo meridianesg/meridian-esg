@@ -128,7 +128,126 @@
   }
 
 }
-<style>
+/* INTELLIGENCE SIGNALS */
+
+.signals-section {
+  padding: 80px 0;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #54a79f;
+  margin-bottom: 22px;
+}
+
+.signals-intro {
+  max-width: 760px;
+  margin-bottom: 45px;
+}
+
+.signals-intro h2 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102a3a;
+  margin-bottom: 20px;
+}
+
+.signals-intro p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #566971;
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.signal-card {
+  background: #ffffff;
+  padding: 38px;
+  border-top: 4px solid #54b7ad;
+}
+
+.signal-number {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #54a79f;
+  margin-bottom: 18px;
+}
+
+.signal-card h3 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: normal;
+  color: #102a3a;
+  margin-bottom: 18px;
+}
+
+.signal-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #566971;
+  margin-bottom: 25px;
+}
+
+.signal-card a {
+  color: #287f7a;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signal-card a:hover {
+  text-decoration: underline;
+}
+
+.signal-principle {
+  margin-top: 45px;
+  padding: 35px;
+  background: #e8efeb;
+  border-left: 4px solid #54b7ad;
+}
+
+.signal-principle span {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  color: #54a79f;
+  margin-bottom: 12px;
+}
+
+.signal-principle p {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 1.45;
+  color: #173849;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+
+  .signal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signals-intro h2 {
+    font-size: 32px;
+  }
+
+  .signal-card {
+    padding: 30px;
+  }
+
+}
+  <style>
 
 :root{
     --navy:#08263a;
