@@ -885,7 +885,13 @@ footer p{
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
-
+.signal-image {
+  display: block;
+  width: calc(100% + 76px);
+  height: 210px;
+  object-fit: cover;
+  margin: -38px -38px 28px;
+}
 .signal-card {
   background: var(--ivory);
   padding: 38px;
@@ -1114,7 +1120,11 @@ footer p{
   .signal-card {
     padding: 30px;
   }
-
+.signal-image {
+  width: calc(100% + 60px);
+  margin: -30px -30px 24px;
+  height: 180px;
+}
 }
 </style>
 </head>
@@ -1221,7 +1231,11 @@ Sustainability is moving quickly. Regulations evolve. Standards change. Investor
 
 
     <article class="signal-card">
-
+<img
+  src="jakarta-harbour.jpg"
+  alt="Jakarta harbour and Indonesia's industrial development"
+  class="signal-image"
+>
       <div class="signal-number">
         02 · INDUSTRIAL TRANSITION
       </div>
