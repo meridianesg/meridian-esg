@@ -1070,6 +1070,74 @@ footer {
     }
 }
 
+/* FROM THE FIELD */
+
+.field-section {
+    padding: 85px 7%;
+    background: #f5f6f4;
+}
+
+.field-layout {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 65px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.field-image {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+}
+
+.field-copy .eyebrow {
+    color: #087f83;
+}
+
+.field-copy h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: normal;
+    margin: 0 0 24px;
+    letter-spacing: -1px;
+}
+
+.field-copy p {
+    color: #53606d;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.field-note {
+    border-left: 3px solid #087f83;
+    padding-left: 20px;
+    margin-top: 28px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.45;
+    color: #18212b;
+}
+
+@media (max-width: 900px) {
+    .field-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .field-image {
+        height: auto;
+        max-height: 480px;
+    }
+
+    .field-copy h2 {
+        font-size: 34px;
+    }
+}
 </style>
 </head>
 
