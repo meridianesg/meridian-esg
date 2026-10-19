@@ -341,7 +341,19 @@ header {
     border-bottom: 1px solid var(--line);
     transition: .2s ease;
 }
+a.guide {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) 160px;
+    width: 100%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
 
+a.guide:hover {
+    color: inherit;
+    text-decoration: none;
+}
 .guide:hover {
     background: var(--paper);
     padding-left: 20px;
