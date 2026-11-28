@@ -1211,6 +1211,146 @@ footer {
     }
 
 }
+
+/* Nexus Asia ESG — Advisory section */
+
+.advisory-section {
+  margin: 64px auto;
+  padding: 0;
+  max-width: 1120px;
+}
+
+.advisory-intro {
+  background: #173b3a;
+  color: #ffffff;
+  padding: 44px 42px;
+  border-radius: 12px;
+}
+
+.advisory-eyebrow {
+  color: #9cc9bd;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.advisory-intro h2 {
+  color: #ffffff;
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.2;
+  max-width: 680px;
+  margin: 0 0 18px;
+}
+
+.advisory-intro > p:last-child {
+  color: #d9e7e3;
+  line-height: 1.75;
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
+.advisory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.advisory-card {
+  background: #ffffff;
+  border: 1px solid #e1e9e6;
+  border-top: 3px solid #438b7d;
+  border-radius: 9px;
+  padding: 28px 24px;
+}
+
+.advisory-number {
+  color: #438b7d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.advisory-card h3 {
+  color: #173b3a;
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 18px 0 12px;
+}
+
+.advisory-card p {
+  color: #596965;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.advisory-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #f1f6f4;
+  border-radius: 9px;
+  padding: 28px 32px;
+  margin-top: 22px;
+}
+
+.advisory-contact h3 {
+  color: #173b3a;
+  font-size: 19px;
+  margin: 0 0 7px;
+}
+
+.advisory-contact p {
+  color: #596965;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.advisory-button {
+  display: inline-block;
+  background: #287f78;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 13px 21px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.advisory-button:hover {
+  background: #1d625d;
+}
+
+@media (max-width: 760px) {
+  .advisory-section {
+    margin: 40px auto;
+  }
+
+  .advisory-intro {
+    padding: 30px 24px;
+  }
+
+  .advisory-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .advisory-card {
+    padding: 24px;
+  }
+
+  .advisory-contact {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px 24px;
+  }
+}
+   
 </style>
 <meta name="google-site-verification" content="dJ33cv20Z9gbgA0xWzewZFcwlusCwUHVYBqojV9s0DA" />   
 </head>
@@ -2018,34 +2158,58 @@ Contact Nexus Asia ESG
   <p><a href="materiality-question-behind-esg.html">Read our guide to ESG materiality assessment →</a></p>
 </section>
    
-<section>
-  <h2>Work with Nexus Asia ESG</h2>
 
-  <p>
-    We provide independent insight and practical expertise to help organisations navigate ESG, sustainability and business challenges across Indonesia and Southeast Asia.
-  </p>
+<section class="advisory-section">
+  <div class="advisory-intro">
+    <p class="advisory-eyebrow">ADVISORY &amp; INTELLIGENCE</p>
+    <h2>From ESG complexity to business clarity.</h2>
+    <p>
+      Independent insight and senior-level expertise to help organisations
+      navigate sustainability, governance and business challenges across
+      Indonesia and Southeast Asia.
+    </p>
+  </div>
 
-  <h3>ESG & Sustainability Advisory</h3>
-  <p>
-    Strategy, governance, materiality assessment, sustainability reporting and corporate responsibility.
-  </p>
+  <div class="advisory-grid">
+    <article class="advisory-card">
+      <span class="advisory-number">01</span>
+      <h3>ESG &amp; Sustainability Advisory</h3>
+      <p>
+        Strengthen sustainability strategy, governance and reporting.
+        From materiality assessment to corporate responsibility,
+        turn commitments into practical priorities.
+      </p>
+    </article>
 
-  <h3>Executive & Board Advisory</h3>
-  <p>
-    Independent perspectives on ESG risks, sustainability oversight, governance and long-term business resilience.
-  </p>
+    <article class="advisory-card">
+      <span class="advisory-number">02</span>
+      <h3>Executive &amp; Board Advisory</h3>
+      <p>
+        Bring an independent perspective to ESG risks, board oversight,
+        sustainability performance and long-term business resilience.
+      </p>
+    </article>
 
-  <h3>Research & ESG Intelligence</h3>
-  <p>
-    Targeted research, regulatory interpretation and analysis of sustainability developments across Asia.
-  </p>
+    <article class="advisory-card">
+      <span class="advisory-number">03</span>
+      <h3>Research &amp; ESG Intelligence</h3>
+      <p>
+        Make sense of regulatory developments, emerging sustainability
+        issues and market signals across Indonesia and Asia.
+      </p>
+    </article>
+  </div>
 
-  <p>
-    <a href="mailto:nexusasiaesg@gmail.com"
-       style="color:#287f78;text-decoration:underline;font-weight:bold;">
-      Discuss an advisory opportunity
+  <div class="advisory-contact">
+    <div>
+      <h3>Have a challenge worth exploring?</h3>
+      <p>Let's discuss where independent insight can make a difference.</p>
+    </div>
+    <a class="advisory-button"
+       href="mailto:nexusasiaesg@gmail.com">
+      Discuss an opportunity →
     </a>
-  </p>
+  </div>
 </section>
 
 </main>
