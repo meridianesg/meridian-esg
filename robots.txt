@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meridian-esg.bobby69lund.workers.dev/sitemap.xml
